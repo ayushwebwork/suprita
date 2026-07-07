@@ -32,69 +32,119 @@ const countIO = new IntersectionObserver((entries)=>{
 statNums.forEach(el=>countIO.observe(el));
 
 /* ---------- Hero typing effect across 3 banners ---------- */
-const slides = [
-  {
-    html: 'Reliable Housekeeping &amp; <span class="accent">Security Manpower.</span>',
-    sub: 'Empowering government offices, PSUs, and institutional clients with 100% verified, background-checked professional staff.'
-  },
-  {
-    html: '500+ Verified Staff. <span class="accent">Zero Compliance Risk.</span>',
-    sub: 'Every professional is background-checked, insured under PF &amp; ESI, and trained to government-grade standards.'
-  },
-  {
-    html: 'Rapid Deployment. <span class="accent">Government-Grade Trust.</span>',
-    sub: 'ISO 9001:2015 certified, PSARA licensed, and ready to deploy 50–500+ staff within 7–14 days.'
-  }
-];
-let slideIdx = 0;
-const headlineEl = document.getElementById('typeHeadline');
-const subEl = document.getElementById('typeSub');
+// const slides = [
+//   {
+//     html: 'Reliable Housekeeping &amp; <span class="accent">Security Manpower.</span>',
+//     sub: 'Empowering government offices, PSUs, and institutional clients with 100% verified, background-checked professional staff.'
+//   },
+//   {
+//     html: '500+ Verified Staff. <span class="accent">Zero Compliance Risk.</span>',
+//     sub: 'Every professional is background-checked, insured under PF &amp; ESI, and trained to government-grade standards.'
+//   },
+//   {
+//     html: 'Rapid Deployment. <span class="accent">Government-Grade Trust.</span>',
+//     sub: 'ISO 9001:2015 certified, PSARA licensed, and ready to deploy 50–500+ staff within 7–14 days.'
+//   }
+// ];
+// let slideIdx = 0;
+// const headlineEl = document.getElementById('typeHeadline');
+// const subEl = document.getElementById('typeSub');
+// const dotsWrap = document.getElementById('heroDots');
+// slides.forEach((_,i)=>{
+//   const b = document.createElement('button');
+//   if(i===0) b.classList.add('active');
+//   b.addEventListener('click', ()=>{ clearTimeout(cycleTimer); runSlide(i); });
+//   dotsWrap.appendChild(b);
+// });
+
+// function setActiveDot(i){
+//   dotsWrap.querySelectorAll('button').forEach((b,idx)=>b.classList.toggle('active', idx===i));
+// }
+
+// function typeText(el, htmlOrText, isHTML, speed, done){
+//   el.innerHTML = '';
+//   const cursor = document.createElement('span');
+//   cursor.className = 'typing-cursor';
+//   let plain = isHTML ? htmlOrText.replace(/<[^>]+>/g,'§SPLIT§').split('§SPLIT§') : null;
+//   // simpler approach: type plain text version, then set final HTML with cursor removed after
+//   const temp = document.createElement('div');
+//   temp.innerHTML = htmlOrText;
+//   const fullText = temp.textContent;
+//   let i = 0;
+//   el.appendChild(cursor);
+//   const interval = setInterval(()=>{
+//     i++;
+//     el.textContent = fullText.slice(0,i);
+//     el.appendChild(cursor);
+//     if(i >= fullText.length){
+//       clearInterval(interval);
+//       el.innerHTML = htmlOrText; // restore accent styling
+//       if(done) done();
+//     }
+//   }, speed);
+// }
+
+// let cycleTimer;
+// function runSlide(i){
+//   slideIdx = i;
+//   setActiveDot(i);
+//   typeText(headlineEl, slides[i].html, true, 38, ()=>{
+//     typeText(subEl, slides[i].sub, false, 14, ()=>{
+//       cycleTimer = setTimeout(()=>{
+//         runSlide((slideIdx+1) % slides.length);
+//       }, 3800);
+//     });
+//   });
+// }
+// runSlide(0);
+
+
+
+/* ---------- Hero slider: typing effect + photo crossfade + nav ---------- */
+const heroCarouselEl = document.getElementById('heroCarousel');
+const heroItems = heroCarouselEl.querySelectorAll('.carousel-item');
+const heroCarousel = new bootstrap.Carousel(heroCarouselEl, {interval:999000, wrap:true});
+const heroPhotoSlides = document.querySelectorAll('.hero-photo-slide');
 const dotsWrap = document.getElementById('heroDots');
-slides.forEach((_,i)=>{
+const heroCountEl = document.getElementById('heroCount1');
+
+heroItems.forEach((_,i)=>{
   const b = document.createElement('button');
   if(i===0) b.classList.add('active');
-  b.addEventListener('click', ()=>{ clearTimeout(cycleTimer); runSlide(i); });
+  b.addEventListener('click', ()=> heroCarousel.to(i));
   dotsWrap.appendChild(b);
 });
-
-function setActiveDot(i){
+function setActiveHeroDot(i){
   dotsWrap.querySelectorAll('button').forEach((b,idx)=>b.classList.toggle('active', idx===i));
+  heroPhotoSlides.forEach((s,idx)=>s.classList.toggle('active', idx===i));
+  if(heroCountEl) heroCountEl.textContent = String(i+1).padStart(2,'0');
 }
 
-function typeText(el, htmlOrText, isHTML, speed, done){
+let heroTypeTimer = null;
+function typeTextFast(el, htmlOrText, speed, done){
+  if(heroTypeTimer) clearInterval(heroTypeTimer);
   el.innerHTML = '';
-  const cursor = document.createElement('span');
-  cursor.className = 'typing-cursor';
-  let plain = isHTML ? htmlOrText.replace(/<[^>]+>/g,'§SPLIT§').split('§SPLIT§') : null;
-  // simpler approach: type plain text version, then set final HTML with cursor removed after
-  const temp = document.createElement('div');
-  temp.innerHTML = htmlOrText;
+  const cursor = document.createElement('span'); cursor.className='typing-cursor';
+  const temp = document.createElement('div'); temp.innerHTML = htmlOrText;
   const fullText = temp.textContent;
   let i = 0;
   el.appendChild(cursor);
-  const interval = setInterval(()=>{
-    i++;
-    el.textContent = fullText.slice(0,i);
-    el.appendChild(cursor);
-    if(i >= fullText.length){
-      clearInterval(interval);
-      el.innerHTML = htmlOrText; // restore accent styling
-      if(done) done();
-    }
+  heroTypeTimer = setInterval(()=>{
+    i++; el.textContent = fullText.slice(0,i); el.appendChild(cursor);
+    if(i >= fullText.length){ clearInterval(heroTypeTimer); el.innerHTML = htmlOrText; if(done) done(); }
   }, speed);
 }
-
-let cycleTimer;
-function runSlide(i){
-  slideIdx = i;
-  setActiveDot(i);
-  typeText(headlineEl, slides[i].html, true, 38, ()=>{
-    typeText(subEl, slides[i].sub, false, 14, ()=>{
-      cycleTimer = setTimeout(()=>{
-        runSlide((slideIdx+1) % slides.length);
-      }, 3800);
-    });
+function runHeroSlide(item, idx){
+  setActiveHeroDot(idx);
+  const headlineEl = item.querySelector('.hero-type-target');
+  const subEl = item.querySelector('.hero-sub-target');
+  if(!headlineEl) return;
+  subEl.style.opacity = 0;
+  typeTextFast(headlineEl, headlineEl.getAttribute('data-full'), 11, ()=>{
+    subEl.textContent = subEl.getAttribute('data-full');
+    requestAnimationFrame(()=>{ subEl.style.transition='opacity .35s ease'; subEl.style.opacity = 1; });
   });
 }
-runSlide(0);
+heroCarouselEl.addEventListener('slide.bs.carousel', (e)=> runHeroSlide(e.relatedTarget, e.to));
+runHeroSlide(heroItems[0], 0);
 

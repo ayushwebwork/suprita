@@ -21,7 +21,30 @@
 
 </head>
 <body>
+<svg style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">
+<defs>
+  <linearGradient id="grad-cool" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0A2440"/><stop offset="55%" stop-color="#123B72"/><stop offset="100%" stop-color="#1E4FA3"/></linearGradient>
+  <linearGradient id="grad-warm" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#123B72"/><stop offset="60%" stop-color="#2E63C4"/><stop offset="100%" stop-color="#E3A73B"/></linearGradient>
+  <linearGradient id="grad-navy-solid" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0F3663"/><stop offset="100%" stop-color="#0A2440"/></linearGradient>
+  <linearGradient id="grad-hero1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#081C33"/><stop offset="50%" stop-color="#154583"/><stop offset="100%" stop-color="#2E63C4"/></linearGradient>
+  <linearGradient id="grad-hero2" x1="1" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0A2440"/><stop offset="55%" stop-color="#0F3663"/><stop offset="100%" stop-color="#123B72"/></linearGradient>
+  <linearGradient id="grad-hero3" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#0A2440"/><stop offset="50%" stop-color="#1E4FA3"/><stop offset="100%" stop-color="#C88A2E"/></linearGradient>
 
+  <symbol id="sil-mop" viewBox="0 0 100 100"><circle cx="50" cy="24" r="10"/><rect x="42" y="34" width="16" height="30" rx="6"/><rect x="30" y="60" width="40" height="10" rx="4"/><rect x="47" y="64" width="6" height="26" rx="2"/><ellipse cx="50" cy="93" rx="18" ry="5" opacity=".7"/></symbol>
+  <symbol id="sil-shield" viewBox="0 0 100 100"><path d="M50 8 20 20v24c0 26 15 40 30 48 15-8 30-22 30-48V20L50 8Z"/><path d="M36 50l10 10 20-22" fill="none" stroke="#0A2440" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="sil-gear" viewBox="0 0 100 100"><circle cx="50" cy="50" r="16"/><g><rect x="46" y="4" width="8" height="18" rx="2"/><rect x="46" y="78" width="8" height="18" rx="2"/><rect x="4" y="46" width="18" height="8" rx="2"/><rect x="78" y="46" width="18" height="8" rx="2"/><rect x="17" y="17" width="8" height="18" rx="2" transform="rotate(45 21 26)"/><rect x="75" y="17" width="8" height="18" rx="2" transform="rotate(-45 79 26)"/><rect x="17" y="65" width="8" height="18" rx="2" transform="rotate(-45 21 74)"/><rect x="75" y="65" width="8" height="18" rx="2" transform="rotate(45 79 74)"/></g></symbol>
+  <symbol id="sil-building1" viewBox="0 0 100 100"><rect x="18" y="34" width="64" height="58" /><polygon points="14,36 50,10 86,36"/><rect x="30" y="44" width="8" height="12"/><rect x="46" y="44" width="8" height="12"/><rect x="62" y="44" width="8" height="12"/><rect x="30" y="62" width="8" height="12"/><rect x="46" y="62" width="8" height="12"/><rect x="62" y="62" width="8" height="12"/><rect x="45" y="78" width="10" height="14"/></symbol>
+  <symbol id="sil-cross" viewBox="0 0 100 100"><rect x="14" y="40" width="72" height="52"/><polygon points="10,42 50,16 90,42"/><rect x="42" y="50" width="16" height="34" fill="#E3A73B"/><rect x="32" y="60" width="36" height="14" fill="#E3A73B"/></symbol>
+  <symbol id="sil-truck" viewBox="0 0 100 100"><rect x="8" y="40" width="50" height="28" rx="3"/><rect x="58" y="50" width="26" height="18" rx="3"/><circle cx="26" cy="74" r="8"/><circle cx="70" cy="74" r="8"/><rect x="14" y="46" width="14" height="10" fill="#0A2440"/></symbol>
+  <symbol id="sil-cap" viewBox="0 0 100 100"><polygon points="50,20 92,38 50,56 8,38"/><rect x="46" y="56" width="8" height="24"/><circle cx="50" cy="82" r="5"/><path d="M24 44v18c0 6 12 12 26 12s26-6 26-12V44" fill="none" stroke="currentColor" stroke-width="5"/></symbol>
+  <symbol id="sil-factory" viewBox="0 0 100 100"><rect x="10" y="52" width="80" height="40"/><polygon points="10,52 34,34 34,52"/><polygon points="34,52 58,30 58,52"/><rect x="66" y="14" width="10" height="38"/><rect x="80" y="24" width="10" height="28"/><circle cx="71" cy="10" r="5" opacity=".6"/><circle cx="85" cy="18" r="4" opacity=".5"/></symbol>
+  <symbol id="sil-houses" viewBox="0 0 100 100"><rect x="8" y="52" width="34" height="38"/><polygon points="4,54 25,34 46,54"/><rect x="50" y="40" width="42" height="50"/><rect x="60" y="52" width="10" height="12"/><rect x="76" y="52" width="10" height="12"/><rect x="60" y="70" width="10" height="12"/><rect x="76" y="70" width="10" height="12"/></symbol>
+  <symbol id="sil-medal" viewBox="0 0 100 100"><circle cx="50" cy="40" r="26"/><path d="M50 20a20 20 0 1 0 .1 0" fill="none" stroke="#0A2440" stroke-width="4" opacity=".5"/><polygon points="38,58 22,94 42,84 50,96 58,84 78,94 62,58" opacity=".9"/></symbol>
+  <symbol id="sil-handshake" viewBox="0 0 100 100"><path d="M6 46l20-14 16 8 10-6 22 12-8 14-10-6-18 10-16-8Z"/><path d="M42 40l12 8 12-8" fill="none" stroke="#E3A73B" stroke-width="5" stroke-linecap="round"/></symbol>
+  <symbol id="sil-doccheck" viewBox="0 0 100 100"><rect x="24" y="10" width="52" height="70" rx="4"/><rect x="34" y="24" width="32" height="6" fill="#0A2440"/><rect x="34" y="38" width="32" height="6" fill="#0A2440"/><circle cx="50" cy="70" r="18" fill="#E3A73B"/><path d="M42 70l6 6 12-13" fill="none" stroke="#0A2440" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="sil-stopwatch" viewBox="0 0 100 100"><rect x="40" y="6" width="20" height="10" rx="2"/><circle cx="50" cy="56" r="34"/><path d="M50 56V34M50 56l16 10" fill="none" stroke="#E3A73B" stroke-width="5" stroke-linecap="round"/><rect x="70" y="14" width="6" height="14" transform="rotate(35 73 21)"/></symbol>
+</defs>
+</svg>
 <!-- ============================ PRELOADER ============================ -->
 <div id="preloader">
   <div class="pre-ring-wrap">
@@ -86,7 +109,7 @@
         <li class="nav-item"><a class="nav-link" href="#testimonials"><i class="bi bi-briefcase"></i> Our Work</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-person-workspace"></i> Career</a></li>
       </ul>
-      <a href="tel:+919971555289" class="nav-phone-btn">
+      <a href="tel:+919971555289" class="nav-phone-btn ">
         <i class="bi bi-telephone"></i>
         Contact Us
       </a>
@@ -112,13 +135,13 @@
 </button>
 
 <!-- ============================ HERO ============================ -->
-<section class="hero" id="home">
+<!-- <section class="hero" id="home">
   <div class="hero-bg-layer">
     <div class="hero-dots parallax-el" data-speed="0.15"></div>
     <div class="hero-blob blob1 parallax-el" data-speed="0.25"></div>
-    <div class="hero-blob blob2 parallax-el" data-speed="0.35"></div>
+    <div class="hero-blob blob2 parallax-el" data-speed="0.35"></div> -->
     <!-- <div class="hero-scanline"></div> -->
-  </div>
+  <!-- </div>
 
   <div class="container px-4 px-lg-5">
     <div class="row  gy-5">
@@ -136,20 +159,20 @@
           <a href="#services" class="btn btn-outline-light2">Explore Services</a>
         </div>
 
-        <!-- <div class="hero-badges" data-reveal="fade" data-reveal-delay="3">
+        <div class="hero-badges" data-reveal="fade" data-reveal-delay="3">
           <div class="hero-badge-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"/></svg>100% PF / ESI Compliant</div>
           <div class="hero-badge-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3 4.7-5"/></svg>ISO 9001:2015</div>
           <div class="hero-badge-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>Verified Staff</div>
         </div> -->
 
-        <div class="hero-slide-dots" id="heroDots"></div>
+        <!-- <div class="hero-slide-dots" id="heroDots"></div>
       </div>
 
       <div class="col-lg-6 hero-visual " data-reveal="right">
         <div class="hero-photo-frame position-relative h-100 ">
           <div>
             <p>ghikh</p>
-          </div>
+          </div>  -->
           <!-- <svg class="verify-radar" viewBox="0 0 300 300">
             <circle cx="150" cy="150" r="140" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
             <circle cx="150" cy="150" r="108" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
@@ -165,7 +188,7 @@
               <path d="M132 151l12 12 26-28" fill="none" stroke="#F2C879" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
             </g>
           </svg> -->
-        </div>
+        <!-- </div>
 
         <div class="glass-card floating-stat-card">
           <div class="fs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 21h18M6 21V9l6-4 6 4v12M10 21v-6h4v6"/></svg></div>
@@ -178,565 +201,130 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
+<section class="hero" id="home">
+  <div class="hero-bg-decor">
+    <div class="abs-dots"></div>
+    <div class="hero-blob-soft b1"></div>
+    <div class="hero-blob-soft b2"></div>
+  </div>
 
+  <div class="container px-4 px-lg-5" style="position:relative;z-index:2;">
+    <div class="row align-items-center gy-5">
 
+      <div class="col-lg-6">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+          <div class="carousel-inner" style="height: 25rem;">
 
-<section class="hero-slider">
-
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
-
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-        </div>
-
-        <div class="carousel-inner">
-
-            <!-- Slide 1 -->
             <div class="carousel-item active">
-
-                <div class="hero-bg"
-                    style="background-image:url('images/hero/security.jpg');">
-                </div>
-
-                <div class="hero-overlay"></div>
-
-                <div class="container">
-
-                    <div class="row align-items-center min-vh-100">
-
-                        <div class="col-lg-6 hero-content">
-
-                            <span class="hero-tag">
-                                ✓ Government Approved Manpower Agency
-                            </span>
-
-                            <h1>
-                                Reliable
-                                <span>Housekeeping</span>
-                                &
-                                <span class="gold">Security</span>
-                                Manpower
-                            </h1>
-
-                            <p>
-                                Delivering highly trained manpower solutions
-                                for Government Departments, PSUs, Hospitals,
-                                Educational Institutions and Corporate Offices.
-                            </p>
-
-                            <div class="hero-btns">
-
-                                <a href="#" class="btn btn-warning hero-btn">
-                                    Get Started
-                                </a>
-
-                                <a href="#" class="btn btn-outline-light hero-btn">
-                                    Explore Services
-                                </a>
-
-                            </div>
-
-                            <div class="hero-features mt-5">
-
-                                <div>
-                                    <i class="bi bi-patch-check"></i>
-                                    Verified Staff
-                                </div>
-
-                                <div>
-                                    <i class="bi bi-shield-check"></i>
-                                    Background Checked
-                                </div>
-
-                                <div>
-                                    <i class="bi bi-headset"></i>
-                                    24×7 Support
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+              <span class="hero-eyebrow-dash">Government-Approved Manpower Agency</span>
+              <h1 class="hero-headline2 font-head mt-3 hero-type-target" data-full="Professional   <span class=&quot;accent&quot;>Housekeeping</span> Services"></h1>
+              <div class="hero-tags">
+                <span class="hero-tag-pill">Housekeeping Services</span>
+                <span class="hero-tag-pill">Sanitization</span>
+                <span class="hero-tag-pill">Facility Care</span>
+              </div>
+              <p class="hero-desc hero-sub-target" data-full="Trained, background-verified professionals for government offices, PSUs, hospitals, educational institutions, commercial buildings, and industrial facilities">Trained, background-verified professionals for government offices, PSUs, hospitals, educational institutions, commercial buildings, and industrial facilities</p>
             </div>
-
-            <!-- Slide 2 -->
 
             <div class="carousel-item">
-
-                <div class="hero-bg"
-                    style="background-image:url('images/hero/cleaning.jpg');">
-                </div>
-
-                <div class="hero-overlay"></div>
-
-                <div class="container">
-
-                    <div class="row align-items-center min-vh-100">
-
-                        <div class="col-lg-6 hero-content">
-
-                            <span class="hero-tag">
-                                Trusted Since 2012
-                            </span>
-
-                            <h1>
-                                Professional
-                                <span>Facility</span>
-                                Management
-                            </h1>
-
-                            <p>
-                                Integrated housekeeping, sanitation,
-                                maintenance and support services for
-                                modern infrastructure.
-                            </p>
-
-                            <div class="hero-btns">
-
-                                <a href="#" class="btn btn-warning hero-btn">
-                                    Contact Us
-                                </a>
-
-                                <a href="#" class="btn btn-outline-light hero-btn">
-                                    Our Projects
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+              <span class="hero-eyebrow-dash">ISO 9001:2015 Certified Agency</span>
+              <h1 class="hero-headline2 font-head mt-3 hero-type-target" data-full="Professional Security Services <span class=&quot;accent&quot;>24×7 Surveillance</span>"></h1>
+              <div class="hero-tags">
+                <span class="hero-tag-pill">Security Guards</span>
+                <span class="hero-tag-pill">Access Control</span>
+                <span class="hero-tag-pill">CCTV Monitoring</span>
+              </div>
+              <p class="hero-desc hero-sub-target" data-full="Background-verified security personnel for government organizations, PSUs, corporate offices, industrial facilities, educational institutions, hospitals">Background-verified security personnel for government organizations, PSUs, corporate offices, industrial facilities, educational institutions, hospitals</p>
             </div>
-
-            <!-- Slide 3 -->
 
             <div class="carousel-item">
-
-                <div class="hero-bg"
-                    style="background-image:url('images/hero/government.jpg');">
-                </div>
-
-                <div class="hero-overlay"></div>
-
-                <div class="container">
-
-                    <div class="row align-items-center min-vh-100">
-
-                        <div class="col-lg-6 hero-content">
-
-                            <span class="hero-tag">
-                                5000+ Workforce
-                            </span>
-
-                            <h1>
-                                Building
-                                <span>Clean</span>
-                                &
-                                <span class="gold">Safe</span>
-                                Environments
-                            </h1>
-
-                            <p>
-                                Empowering organizations with
-                                reliable manpower solutions
-                                across India.
-                            </p>
-
-                            <div class="hero-btns">
-
-                                <a href="#" class="btn btn-warning hero-btn">
-                                    Hire Manpower
-                                </a>
-
-                                <a href="#" class="btn btn-outline-light hero-btn">
-                                    Learn More
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+              <span class="hero-eyebrow-dash">Sustainable Waste Management</span>
+              <h1 class="hero-headline2 font-head mt-3 hero-type-target" data-full="Garbage Collection <span class=&quot;accent&quot;>Door-to-Door Collection</span>"></h1>
+              <div class="hero-tags">
+                <!-- <span class="hero-tag-pill">Door-to-Door Collection</span> -->
+                <span class="hero-tag-pill">Waste Transportation</span>
+                <span class="hero-tag-pill">Source Segregation</span>
+              </div>
+              <p class="hero-desc hero-sub-target" data-full="GPS-enabled vehicles, and environmentally responsible waste handling for municipalities, government bodies, institutions, and smart cities">GPS-enabled vehicles, and environmentally responsible waste handling for municipalities, government bodies, institutions, and smart cities</p>
             </div>
 
+          </div>
         </div>
 
-    </div>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="#contact" class="btn btn-navy">Get in Touch &rarr;</a>
+          <a href="#services" class="btn btn-ghost-navy">Explore Services</a>
+        </div>
 
-    <div class="hero-stats">
+        <div class="hero-nav-row">
+          <button class="hero-nav-arrow" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="hero-nav-count"><span id="heroCount1">01</span> <span>/ 03</span></div>
+          <div class="hero-nav-dots" id="heroDots"></div>
+          <button class="hero-nav-arrow" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
 
-        <div class="container">
-
-            <div class="row g-4">
-
-                <div class="col-lg-3 col-6">
-
-                    <div class="stat-box">
-                        <h2>150+</h2>
-                        <span>Active Deployments</span>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-6">
-
-                    <div class="stat-box">
-                        <h2>5000+</h2>
-                        <span>Verified Staff</span>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-6">
-
-                    <div class="stat-box">
-                        <h2>100+</h2>
-                        <span>Happy Clients</span>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-6">
-
-                    <div class="stat-box">
-                        <h2>18+</h2>
-                        <span>States Served</span>
-                    </div>
-
-                </div>
-
+      <div class="col-lg-6">
+        <div class="hero-visual2">
+          <div class="hero-decor-dots"></div>
+          <div class="hero-photo-blob">
+            <div class="hero-photo-slide active" data-slide="0">
+               <div class="h-100">
+              <img class="h-100 w-100 object-fit-cover " src="https://images.openai.com/static-rsc-4/ZWrLr6rt4OdZcQlW_BAk1gvXhV3XYlIZrUK70iJvAA1TBlUkZCirxXePMRMQkam3wUCH2-hnjwran9kfcupDYkPDgsEPh1tS9ymtTaDR_qnYLm8aKrGi0oJoe1zCo7HircN3dwAr0D98HlI6d6C5wCt9kTnpgtEMaT8md3Dd4SrUQOZsZuuMCh7FY9EVTXnC?purpose=fullsize"/>
+              </div>
+              <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice"><rect width="100" height="100" fill="url(#grad-hero1)"/><circle cx="88" cy="12" r="30" fill="rgba(255,255,255,.09)"/><circle cx="8" cy="90" r="22" fill="rgba(227,167,59,.16)"/><use href="#sil-mop" x="30" y="10" width="42" height="80" fill="rgba(255,255,255,.6)"/></svg> -->
             </div>
+            <div class="hero-photo-slide" data-slide="1">
+              <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice"><rect width="100" height="100" fill="url(#grad-hero2)"/><circle cx="90" cy="16" r="28" fill="rgba(255,255,255,.09)"/><circle cx="6" cy="88" r="20" fill="rgba(227,167,59,.16)"/><use href="#sil-shield" x="32" y="8" width="38" height="84" fill="rgba(255,255,255,.6)"/></svg> -->
+              <div class="h-100">
+              <img class="h-100 w-100 object-fit-cover " src="https://images.openai.com/static-rsc-4/nThPVClJPHuLEAVb3j7X0RFXye-ib2BWscFTcZWqPkNms3GM0KzLiHWrjgmRzUYvq1ARghvXY9JZ2r-ZUTYlYctQO_-mfcG11pfm_tWHlCats0et6vOEXjHM7ZWvORI3gnGkDF9nms-ZY_kELkjbRSn8up9mJFOVemHop6pGSBxb3-17JnHdIR1357hqTyza?purpose=fullsize"/>
+              </div>
+            </div>
+            <div class="hero-photo-slide" data-slide="2">
+              <div class="h-100">
+              <img class="h-100 w-100 object-fit-cover " src="https://images.openai.com/static-rsc-4/be1BbHmNEZ3WwiqpV4swZa6esrTSpta6_FLwWclEWW15HWKIdxZaMaSrE3i4v3JxjjEBNcPXFv-eyOiNLKGQVmJ5O9kuoF7GQKETxBA64dWKnSXAkU1qJ30u9PbBTIjx3dEeaVJupij_KqefQG089_ZIjUS32vnCLaDYGkcXUkkE8wrvZ7T2aNHN79nqovoe?purpose=fullsize"/>
+              </div>
+              
+              <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice"><rect width="100" height="100" fill="url(#grad-hero3)"/><circle cx="86" cy="14" r="30" fill="rgba(255,255,255,.09)"/><circle cx="10" cy="86" r="22" fill="rgba(10,36,64,.18)"/><use href="#sil-gear" x="28" y="14" width="44" height="70" fill="rgba(255,255,255,.6)"/></svg> -->
+              </div>
+          </div>
+          <div class="hero-star s1"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.2 8.4L22 12l-7.8 3.6L12 24l-2.2-8.4L2 12l7.8-3.6z"/></svg></div>
+          <div class="hero-star s2"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.2 8.4L22 12l-7.8 3.6L12 24l-2.2-8.4L2 12l7.8-3.6z"/></svg></div>
 
+          <div class="hero-stat-card">
+            <div class="hero-stat-row"><div class="hero-stat-num">150+</div><div class="hero-stat-label">Active Deployments</div></div>
+            <div class="hero-stat-row"><div class="hero-stat-num">3+</div><div class="hero-stat-label">Years of Trust</div></div>
+            <div class="hero-stat-row"><div class="hero-stat-num">500+</div><div class="hero-stat-label">Verified Staff</div></div>
+          </div>
+
+          <div class="hero-circle-badge">
+            <a href="#contact" aria-label="Get in touch">
+              <svg viewBox="0 0 104 104" width="104" height="104">
+                <g class="badge-spin">
+                  <path id="badgeCirclePath" d="M 52,52 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none"/>
+                  <text font-family="Barlow Condensed, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#0A2440">
+                    <textPath href="#badgeCirclePath" xlink:href="#badgeCirclePath" startOffset="0%">GET IN TOUCH • GET IN TOUCH • </textPath>
+                  </text>
+                </g>
+              </svg>
+              <div class="badge-center">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M17 7 7 17M7 7h10v10"/></svg>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
 
     </div>
-
+  </div>
 </section>
 
 
-<style>
-  .hero-slider{
-    position:relative;
-    overflow:hidden;
-    background:#071f45;
-}
-
-.carousel-item{
-    height:100vh;
-    position:relative;
-}
-
-.hero-bg{
-
-    position:absolute;
-    inset:0;
-
-    background-size:cover;
-    background-position:center;
-
-    animation:kenburns 8s ease forwards;
-    transform:scale(1);
-}
-
-.hero-overlay{
-
-    position:absolute;
-    inset:0;
- background:
-    linear-gradient(90deg,
-    rgba(6,20,46,.93) 0%,
-    rgba(6,20,46,.83) 40%,
-    rgba(6,20,46,.55) 70%,
-    rgba(6,20,46,.30)100%);
-
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMcrqYgL7XZF-CPpt9pehtxU9hV2yE0qzQ_LX_Bae7lg&s);
-   
-}
-
-.hero-content{
-
-    position:relative;
-    z-index:5;
-    color:#fff;
-
-    animation:fadeUp 1.2s;
-}
-
-.hero-tag{
-
-    display:inline-block;
-
-    padding:10px 22px;
-
-    border:1px solid rgba(255,193,7,.5);
-
-    border-radius:40px;
-
-    color:#ffca4d;
-
-    font-size:13px;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-    margin-bottom:25px;
-
-    backdrop-filter:blur(12px);
-
-    background:rgba(255,255,255,.05);
-}
-
-.hero-content h1{
-
-    font-size:68px;
-
-    line-height:1.1;
-
-    font-weight:800;
-
-    margin-bottom:30px;
-}
-
-.hero-content h1 span{
-    color:#ffffff;
-}
-
-.hero-content h1 .gold{
-    color:#ffc34d;
-}
-
-.hero-content p{
-
-    font-size:21px;
-
-    color:#d6dbe5;
-
-    max-width:620px;
-
-    margin-bottom:40px;
-
-    line-height:1.8;
-}
-
-.hero-btn{
-
-    padding:16px 35px;
-
-    border-radius:14px;
-
-    font-weight:700;
-
-    margin-right:15px;
-}
-
-.hero-features{
-
-    display:flex;
-
-    gap:40px;
-
-    color:white;
-
-    font-weight:600;
-}
-
-.hero-features i{
-
-    color:#ffc34d;
-
-    margin-right:8px;
-}
-
-.hero-stats{
-
-    position:absolute;
-
-    bottom:35px;
-
-    width:100%;
-
-    z-index:20;
-}
-
-.stat-box{
-
-    background:rgba(255,255,255,.08);
-
-    backdrop-filter:blur(20px);
-
-    border:1px solid rgba(255,255,255,.15);
-
-    border-radius:22px;
-
-    padding:28px;
-
-    text-align:center;
-
-    color:white;
-
-    transition:.4s;
-}
-
-.stat-box:hover{
-
-    transform:translateY(-8px);
-
-    background:rgba(255,255,255,.12);
-}
-
-.stat-box h2{
-
-    font-size:42px;
-
-    color:#ffc34d;
-
-    font-weight:800;
-}
-
-.stat-box span{
-
-    color:#dce4ef;
-}
-
-/* Background Zoom */
-
-@keyframes kenburns{
-
-0%{
-transform:scale(1);
-}
-
-100%{
-transform:scale(1.18);
-}
-
-}
-
-/* Content */
-
-@keyframes fadeUp{
-
-0%{
-opacity:0;
-transform:translateY(40px);
-}
-
-100%{
-opacity:1;
-transform:translateY(0);
-}
-
-}
-
-/* Fade Out */
-
-.carousel-item.active .hero-content{
-animation:fadeContent 6s linear forwards;
-}
-
-@keyframes fadeContent{
-
-0%{
-opacity:0;
-transform:translateY(30px);
-}
-
-15%{
-opacity:1;
-transform:translateY(0);
-}
-
-80%{
-opacity:1;
-}
-
-100%{
-opacity:0;
-transform:translateY(-20px);
-}
-
-}
-
-.carousel-indicators button{
-
-width:12px;
-height:12px;
-border-radius:50%;
-background:#fff;
-}
-
-.carousel-indicators .active{
-
-background:#ffc34d;
-}
-
-@media(max-width:991px){
-
-.hero-content h1{
-
-font-size:45px;
-
-}
-
-.hero-content p{
-
-font-size:18px;
-
-}
-
-.hero-features{
-
-flex-direction:column;
-
-gap:15px;
-
-}
-
-.hero-stats{
-
-position:relative;
-
-bottom:0;
-
-padding:30px 0;
-
-}
-
-.carousel-item{
-
-height:auto;
-padding:140px 0 70px;
-
-}
-
-}
-</style>
-
-  <script>
-var heroSlider = document.querySelector('#heroCarousel');
-
-new bootstrap.Carousel(heroSlider,{
-    interval:6000,
-    ride:'carousel',
-    pause:false,
-    touch:true,
-    wrap:true
-});
-</script>
 
 <!-- ============================ STATS STRIP ============================ -->
 <section class="stats-strip">
@@ -768,7 +356,7 @@ new bootstrap.Carousel(heroSlider,{
 
 <!-- ============================ SERVICES ============================ -->
 <section class="section" id="services">
-  <div class="container px-4 px-lg-5">
+  <div class="container-fluid px-4 px-lg-5">
     <div class="sec-head mx-auto" data-reveal="fade">
       <div class="text-center"><span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2 2 7l10 5 10-5-10-5Zm0 10L2 17l10 5 10-5-10-5Z"/></svg>Core Capabilities</span></div>
       <h2 class="mt-3 text-center">Comprehensive Manpower Solutions</h2>
@@ -777,18 +365,28 @@ new bootstrap.Carousel(heroSlider,{
 
     <div class="row gy-4 mt-4">
       <div class="col-lg-4" data-reveal="fade" data-reveal-delay="1">
-        <div class="svc-card">
+        <div class="svc-card" >
           <div class="svc-bg bg-house"></div>
           <div class="svc-body">
-            <svg class="svc-illust" viewBox="0 0 64 64" fill="none"><rect x="10" y="26" width="44" height="30" rx="4" fill="#E7EFFC" stroke="#1E4FA3" stroke-width="2"/><path d="M18 26V16a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v10" stroke="#1E4FA3" stroke-width="2" fill="none"/><circle cx="32" cy="40" r="7" fill="#E3A73B"/><path d="M28 40h8M32 36v8" stroke="#0A2440" stroke-width="1.6"/></svg>
-            <h3 class="h4">Housekeeping Services</h3>
+            <div class=" w-100 p-2 position-relative" style="height: 16rem;">
+              <img class="h-100 w-100 object-fit-cover" style="border-radius: var(--radius);" src="https://images.openai.com/static-rsc-4/avYMfRjiFjAoXiAkbG5thyAyi-7HMXGer8g7mZdup9NkV3Mmkb86ZQSzk6jceYsfCeBbWf_UIpAH7mmZF0P-fLhbt2tnLvv8NAEyp_5x8jDHyZKQcG0b9WnMgt-6t0qXtiNoVWuYP6N3v_HoSx_oryMh-78oMDdE76VlX38F2-kXYiD2PanQgUvRlPjVMFZd?purpose=fullsize"/>
+              <div class="d-flex gap-2 align-items-center position-absolute core_capability_icon">
+                <i class="bi bi-brush" ></i>
+              </div>
+
+            </div>
+            <div class="svc-body-inside">
+            
+              <h3 class="h5">Housekeeping Services</h3>
+            
             <p class="text-muted-2 mb-0">Immaculate hygiene standards for government offices, hospitals, municipal buildings, and residential complexes using eco-friendly, industry-grade solutions.</p>
             <ul class="svc-list">
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Complete Deep Cleaning</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Trained Pantry Boys &amp; Peons</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Washroom Sanitization Programs</li>
             </ul>
-            <a class="svc-link" href="#contact">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            <!-- <a class="svc-link" href="#contact">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a> -->
+          </div>
           </div>
         </div>
       </div>
@@ -797,15 +395,25 @@ new bootstrap.Carousel(heroSlider,{
         <div class="svc-card">
           <div class="svc-bg bg-sec"></div>
           <div class="svc-body">
-            <svg class="svc-illust" viewBox="0 0 64 64" fill="none"><path d="M32 6 12 14v14c0 14 9 21 20 26 11-5 20-12 20-26V14L32 6Z" fill="#E7EFFC" stroke="#1E4FA3" stroke-width="2"/><path d="M24 32l6 6 12-13" stroke="#E3A73B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3 class="h4">Security Guard Services</h3>
+            <div class=" w-100 p-2 position-relative" style="height: 16rem;">
+              <img class="h-100 w-100 object-fit-cover" style="border-radius: var(--radius);" src="https://images.openai.com/static-rsc-4/zLkS8DvlGknFguU6Xgqiw0dvNe5x6pqqQgxKYpZA6DSzyjFp_64RUL-Ucz9A-J8aRr5yIeeBj0rdR7Q-aFklqOKkL4EME8RnqbQmc07s3v_3qeTztPhOuahA_iqWZo-pPSzJOcBwmb8vVO7kgFAbFIKdTYhZxluNkN-7q7Mf4pucUiDham-w2I0WVUg_77_W?purpose=fullsize"/>
+            <div class="d-flex gap-2 align-items-center position-absolute core_capability_icon">
+                <i class="bi bi-shield-check" ></i>
+              </div>
+            </div>
+            <div class="svc-body-inside">
+              <div class="d-flex gap-2 align-items-center">
+            <!-- <svg class="svc-illust" viewBox="0 0 64 64" fill="none"><path d="M32 6 12 14v14c0 14 9 21 20 26 11-5 20-12 20-26V14L32 6Z" fill="#E7EFFC" stroke="#1E4FA3" stroke-width="2"/><path d="M24 32l6 6 12-13" stroke="#E3A73B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
+            <h3 class="h5">Security Guard Services</h3>
+            </div>
             <p class="text-muted-2 mb-0">PSARA-licensed security manpower for government buildings, PSUs, and institutional premises with round-the-clock vigilance.</p>
             <ul class="svc-list">
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Armed &amp; Unarmed Guards</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Access Control Management</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>24/7 CCTV Monitoring Experts</li>
             </ul>
-            <a class="svc-link" href="#contact">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            <!-- <a class="svc-link" href="#contact">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a> -->
+          </div>
           </div>
         </div>
       </div>
@@ -814,15 +422,25 @@ new bootstrap.Carousel(heroSlider,{
         <div class="svc-card">
           <div class="svc-bg bg-fac"></div>
           <div class="svc-body">
-            <svg class="svc-illust" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="10" fill="#E7EFFC" stroke="#1E4FA3" stroke-width="2"/><path d="M32 12v6M32 46v6M12 32h6M46 32h6M18 18l4 4M46 46l-4-4M46 18l-4 4M18 46l4-4" stroke="#E3A73B" stroke-width="2.5" stroke-linecap="round"/></svg>
-            <h3 class="h4">Facility Management</h3>
+            <div class=" w-100 p-2 position-relative" style="height: 16rem;" >
+              <img class="h-100 w-100 object-fit-cover" style="border-radius: var(--radius);" src="https://images.openai.com/static-rsc-4/BQrhuH3WNAmj7WWz2bzXpjgeYr1opah0qkU3SVS8D-IgesI_tNNVTxtpA_hlQfhpCjjZQ4edkNdKS-e_k8aAPFMtOfELSFx2sII1QNNVRdIawrT1PiIlK7lzYZZBs1vgd9vA053K6rUOv1Vnbq_P8_hpmw7c3_33-lnZWXnruEtR1mT4nFq7RkIOcU8Pbm28?purpose=fullsize"/>
+            <div class="d-flex gap-2 align-items-center position-absolute core_capability_icon">
+                <i class="bi bi-buildings " ></i>
+              </div>
+            </div>
+            <div class="svc-body-inside">
+              <div class="d-flex gap-2 align-items-center">
+            <!-- <svg class="svc-illust" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="10" fill="#E7EFFC" stroke="#1E4FA3" stroke-width="2"/><path d="M32 12v6M32 46v6M12 32h6M46 32h6M18 18l4 4M46 46l-4-4M46 18l-4 4M18 46l4-4" stroke="#E3A73B" stroke-width="2.5" stroke-linecap="round"/></svg> -->
+            <h3 class="h5">Facility Management</h3>
+            </div>
             <p class="text-muted-2 mb-0">End-to-end deployment of skilled technical labor for government and institutional facilities, ensuring zero downtime.</p>
             <ul class="svc-list">
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Certified Electricians &amp; Plumbers</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>HVAC Maintenance Staff</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Landscaping &amp; Waste Management</li>
             </ul>
-            <a class="svc-link" href="#contact">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            <!-- <a class="svc-link" href="#contact">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a> -->
+          </div>
           </div>
         </div>
       </div>
@@ -835,17 +453,20 @@ new bootstrap.Carousel(heroSlider,{
 </section>
 
 <!-- ============================ SECTORS ============================ -->
-<section class="section" style="background:var(--surface);" id="about">
+<section class="section" style="background:linear-gradient(120deg,var(--navy),var(--blue) 120%);" id="about">
   <div class="container px-4 px-lg-5">
     <div class="sec-head mx-auto" data-reveal="fade">
       <div class="text-center"><span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 21V9l8-6 8 6v12M9 21v-6h6v6"/></svg>Government Expertise</span></div>
-      <h2 class="mt-3 text-center">Government &amp; Institutional Projects</h2>
+      <h2 class="mt-3 text-center" style="color: #dbe6f7;">Government &amp; Institutional Projects</h2>
       <p class="lead-p text-center mt-2">A proven track record deploying trained manpower across government departments, public sector undertakings, and municipal corporations across India.</p>
     </div>
 
     <div class="row gy-4 mt-4">
       <div class="col-md-6 col-lg-4" data-reveal="fade" data-reveal-delay="1">
         <div class="sector-card">
+          <div class="sector-card_bg sector-card_bg1">
+            <!-- <img src=""/> -->
+          </div>
           <div class="sector-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21V9l8-6 8 6v12M9 21v-6h6v6"/></svg></div>
           <span class="sector-tag">Central &amp; State Govt</span>
           <h4 class="h5 mt-2">Government Office Buildings</h4>
@@ -854,6 +475,9 @@ new bootstrap.Carousel(heroSlider,{
       </div>
       <div class="col-md-6 col-lg-4" data-reveal="fade" data-reveal-delay="2">
         <div class="sector-card">
+          <div class="sector-card_bg sector-card_bg2">
+            <!-- <img src=""/> -->
+          </div>
           <div class="sector-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v4M16 3v4M4 11h16M6 21h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/><path d="M9 15h1v3H9zM14 15h1v3h-1z"/></svg></div>
           <span class="sector-tag">Healthcare Sector</span>
           <h4 class="h5 mt-2">Government Hospitals</h4>
@@ -862,6 +486,9 @@ new bootstrap.Carousel(heroSlider,{
       </div>
       <div class="col-md-6 col-lg-4" data-reveal="fade" data-reveal-delay="3">
         <div class="sector-card">
+          <div class="sector-card_bg sector-card_bg3">
+            <!-- <img src=""/> -->
+          </div>
           <div class="sector-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="10" width="18" height="11" rx="1"/><path d="M9 21v-5h6v5M3 10l9-6 9 6"/></svg></div>
           <span class="sector-tag">Municipal Services</span>
           <h4 class="h5 mt-2">Municipal Corporations</h4>
@@ -870,6 +497,9 @@ new bootstrap.Carousel(heroSlider,{
       </div>
       <div class="col-md-6 col-lg-4" data-reveal="fade" data-reveal-delay="1">
         <div class="sector-card">
+          <div class="sector-card_bg sector-card_bg4">
+            <!-- <img src=""/> -->
+          </div>
           <div class="sector-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5Zm-9 5v6M6 12v6c0 1 3 2 6 2s6-1 6-2v-6"/></svg></div>
           <span class="sector-tag">Education Sector</span>
           <h4 class="h5 mt-2">Educational Institutions</h4>
@@ -878,6 +508,9 @@ new bootstrap.Carousel(heroSlider,{
       </div>
       <div class="col-md-6 col-lg-4" data-reveal="fade" data-reveal-delay="2">
         <div class="sector-card">
+          <div class="sector-card_bg sector-card_bg5">
+            <!-- <img src=""/> -->
+          </div>
           <div class="sector-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 8h2v2H8zM14 8h2v2h-2zM8 14h2v2H8zM14 14h2v2h-2z"/></svg></div>
           <span class="sector-tag">PSU &amp; Corporations</span>
           <h4 class="h5 mt-2">Public Sector Undertakings</h4>
@@ -886,6 +519,9 @@ new bootstrap.Carousel(heroSlider,{
       </div>
       <div class="col-md-6 col-lg-4" data-reveal="fade" data-reveal-delay="3">
         <div class="sector-card">
+          <div class="sector-card_bg sector-card_bg6">
+            <!-- <img src=""/> -->
+          </div>
           <div class="sector-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2 4 4 8-8 4 4"/><path d="M3 20h18"/></svg></div>
           <span class="sector-tag">Residential</span>
           <h4 class="h5 mt-2">Government Housing Societies</h4>

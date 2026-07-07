@@ -9,8 +9,7 @@
   --blue:#1E4FA3;
   --blue-2:#2E63C4;
   --blue-soft:#E7EFFC;
-  --gold:#E3A73B;
-  --gold-2:#F2C879;
+
   --bg:#F4F7FB;
   --surface:#FFFFFF;
   --ink:#152238;
@@ -20,7 +19,15 @@
   --glass-brd:rgba(255,255,255,0.24);
   --radius:18px;
   --ease:cubic-bezier(.22,.9,.25,1);
+
+
+  --hero-accent:#0049afd1;
+
+  --gold:#000;
+
+    --gold-2:#0000;
 }
+
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
@@ -84,8 +91,8 @@ p, li, .font-body{font-family:'Inter',sans-serif;}
 }
 .fab:hover{width:172px;transform:translateX(2px);transition: all 0.2s linear;}
 .fab:hover .fab-label{opacity:1;max-width:140px;margin-left:10px;padding-right:14px;}
-.fab-whatsapp{background:#25D366;}
-.fab-brochure{background:linear-gradient(135deg,var(--gold),#c8862a);}
+.fab-whatsapp{background:#199547;}
+.fab-brochure{background:linear-gradient(135deg,var(--navy-3),var(--navy));}
 
 #goTopBtn{
   position:fixed;bottom:26px;right:26px;z-index:1200;
@@ -128,4 +135,4 @@ p, li, .font-body{font-family:'Inter',sans-serif;}
 [data-reveal-delay="4"]{transition-delay:.46s;}
 [data-reveal-delay="5"]{transition-delay:.58s;}
 
-::selection{background:var(--gold);color:#1a1200;}
+::selection{background:var(--blue);color:#fff;}
