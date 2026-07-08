@@ -147,4 +147,4 @@ footer ul li{margin-bottom:10px;}
 .footer-social:hover svg{color:#1a1200;}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:50px;padding:18px 0;text-align:center;font-size:.85rem;color:#8ea3c3;}
 .footer-contact-item{display:flex;gap:10px;margin-bottom:14px;align-items:flex-start;}
-.footer-contact-item svg{width:18px;height:18px;color:var(--gold-2);flex:none;margin-top:3px;}
+.footer-contact-item svg{width:18px;height:18px;color:#fff;flex:none;margin-top:3px;}

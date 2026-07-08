@@ -148,3 +148,38 @@ function runHeroSlide(item, idx){
 heroCarouselEl.addEventListener('slide.bs.carousel', (e)=> runHeroSlide(e.relatedTarget, e.to));
 runHeroSlide(heroItems[0], 0);
 
+// testimonial
+
+(function(){
+  var carouselEl = document.getElementById('testiRotateCarousel');
+  var carousel = new bootstrap.Carousel(carouselEl, {interval:5000, wrap:true, pause:false});
+  var dotsWrap = document.getElementById('testiDotsWrap');
+  var progressBar = document.getElementById('testiProgressBar');
+  var items = carouselEl.querySelectorAll('.carousel-item');
+
+  items.forEach(function(_, i){
+    var b = document.createElement('button');
+    if(i === 0) b.classList.add('active');
+    b.addEventListener('click', function(){ carousel.to(i); restartProgress(); });
+    dotsWrap.appendChild(b);
+  });
+
+  function setActiveDot(i){
+    dotsWrap.querySelectorAll('button').forEach(function(b, idx){
+      b.classList.toggle('active', idx === i);
+    });
+  }
+  function restartProgress(){
+    progressBar.classList.remove('run');
+    void progressBar.offsetWidth; /* restart CSS animation */
+    progressBar.classList.add('run');
+  }
+
+  carouselEl.addEventListener('slide.bs.carousel', function(e){
+    setActiveDot(e.to);
+    restartProgress();
+  });
+
+  document.getElementById('testiPrevBtn').addEventListener('click', function(){ carousel.prev(); restartProgress(); });
+  document.getElementById('testiNextBtn').addEventListener('click', function(){ carousel.next(); restartProgress(); });
+})();
