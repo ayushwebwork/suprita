@@ -25,7 +25,7 @@ document.querySelectorAll('.lang-item').forEach(btn=>{
 window.addEventListener('load', function(){
   setTimeout(function(){
     document.getElementById('preloader').classList.add('hide');
-  }, 1000);
+  }, 500);
 });
 // safety fallback
 setTimeout(function(){document.getElementById('preloader').classList.add('hide');}, 3500);

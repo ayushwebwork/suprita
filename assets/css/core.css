@@ -61,7 +61,7 @@ p, li, .font-body{font-family:'Inter',sans-serif;}
 }
 #preloader.hide{opacity:0;visibility:hidden;pointer-events:none;}
 .pre-ring-wrap{position:relative;width:14rem;height:14rem;display:flex;align-items:center;justify-content:center;}
-.pre-ring{position:absolute;inset:0;border-radius:50%;border:3px solid rgba(255,255,255,.14);border-top-color:var(--gold);animation:spin 1.1s linear infinite;}
+.pre-ring{position:absolute;inset:0;border-radius:50%;border:3px solid rgba(92, 90, 90, 0.14);border-top-color:#fff;animation:spin 1.1s linear infinite;}
 .pre-ring.r2{inset:14px;border-top-color:#fff;opacity:.6;animation-duration:1.6s;animation-direction:reverse;}
 .pre-logo{width:56px;height:auto;position:relative;z-index:2;animation:pulseLogo 1.6s ease-in-out infinite;}
 @keyframes spin{to{transform:rotate(360deg);}}
@@ -92,7 +92,7 @@ p, li, .font-body{font-family:'Inter',sans-serif;}
 .fab:hover{width:172px;transform:translateX(2px);transition: all 0.2s linear;}
 .fab:hover .fab-label{opacity:1;max-width:140px;margin-left:10px;padding-right:14px;}
 .fab-whatsapp{background:#199547;}
-.fab-brochure{background:linear-gradient(135deg,var(--navy-3),var(--navy));}
+.fab-brochure{background:linear-gradient(135deg,var(--navy-3),var(--navy));border: 1px solid #ffffff5c;}
 
 #goTopBtn{
   position:fixed;bottom:26px;right:26px;z-index:1200;
@@ -136,3 +136,9 @@ p, li, .font-body{font-family:'Inter',sans-serif;}
 [data-reveal-delay="5"]{transition-delay:.58s;}
 
 ::selection{background:var(--blue);color:#fff;}
+
+
+.section_heading_accent{
+  color: var(--blue);
+}
+
