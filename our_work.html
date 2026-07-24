@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" href="./assets/css/core.css"/>
 <link rel="stylesheet" href="./assets/css/header_footer.css" />
+<link rel="stylesheet" href="./assets/css/our_work.css"/>
 
 </head>
 <body>
@@ -62,7 +63,7 @@
   </div>
 </div>
 <!-- ============================ HEADER ============================ -->
-<header class="navbar navbar-expand-lg  position-sticky" id="mainHeader" style="top: 0; z-index: 1;">
+<header class="navbar navbar-expand-lg  position-sticky" id="mainHeader" style="top: 0; z-index: 3;">
   <div class="container-fluid px-4 px-lg-5">
     <a class="navbar-brand" href="#home">
     <div class="position-relative">
@@ -78,10 +79,10 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navMenu">
       <ul class="navbar-nav align-items-lg-center gap-1 me-3">
-        <li class="nav-item"><a class="nav-link active" href="#home"><i class="bi bi-house-door"></i> Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-person-circle"></i> About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services"><i class="bi bi-gear"></i> Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#testimonials"><i class="bi bi-briefcase"></i> Our Work</a></li>
+        <li class="nav-item"><a class="nav-link " href="./index.html"><i class="bi bi-house-door"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html"><i class="bi bi-person-circle"></i> About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="./services.html"><i class="bi bi-gear"></i> Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./our_work.html"><i class="bi bi-briefcase"></i> Our Work</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-person-workspace"></i> Career</a></li>
       </ul>
       <a href="tel:+919971555289" class="nav-phone-btn">
@@ -110,7 +111,408 @@
 </button>
 
 
-<div style="min-height: 100vh;"></div>
+
+<section class="page-hero">
+  <div class="page-hero-blob b1"></div>
+  <div class="page-hero-blob b2"></div>
+  <!-- <div class="page-hero-texture"><img src="data:image/png;base64,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" alt="" loading="lazy"></div> -->
+  <!-- <div class="abs-bg"><div class="abs-dots on-dark"><div class="pattern-diagonal on-dark"></div></div></div> -->
+  <div class="container px-4 px-lg-5" style="position:relative;z-index:2;">
+    <span class="eyebrow light" data-reveal="fade"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADP0lEQVR42u2dP2obQRSHf8+kFj6AcRFCShGEqxQpUvgEi+vgEwhVKVWmMjqAMakXncBFihSpgjEuVQYfwOQAmRQ7+VPI9rzd2fWs9X0Q0izs8D69+bOemScBAAAAAAAAwGiwsTQ0hDCRdCzpQNJh/D833yTdSro0s5/8PPKIm4UQ6hDCr4H/1SGEGQY6ZNwTidsmckIX6pNXSaoLa9aJma1Li9Ue8pKpY9vIwIfGO0nfC+/dj8zsCoHbZ5l3IxiebyS9K2WWWlIXuhzJ/GpaUluN7GvNfglZ+KKQYJy26MY2mdvwOmaXp80rFnxNBl4nrsmu+1xcx48GyW2hC/V3n713W6W1ZwyTmFeOhXTvwYrvWGRu+7MW+DLxucsB23SRue07sYxIyYxn966dEQgIRCAgEEpdB8b106mkty2+auwCf74e1cq4ZcMyiJtJ+iipwpGLlaRlV5HWMeOWkua46ESnv/RbB3nnZF2+bDSzxSACo7yvjHFlSNxrmXnIy888hDDvNQPjC86Ida+49tyYM/vuiO8gy43kPTeeLnRJbAdhquYIQRKeLRXvHc+u9e+cATTnOD445g4nMYZ5iFsNUreis7S4ZwhyHhWY5Hz5PPGlLOrzSUxKhNQx8DDxuQs0PTBjbCYmnxzdbt514GPjHmfqkiRexZlmlqTZy/lrgGQ2JWYgPAEIRCAgEBCIQEAgIBCc5DzgWYUQakKaFqsSBWZtGNCFIhAQCAgEBCIQEAjFL+SlnFvhWMgPLnBtZie4eZz4xSqLRLpQxkBAICAQgYBAQCAgEIGAQEAgIBCBgEBAICAQgYBAQCAgEIGAQBheINdGDs9tToE/Ep6psl6R+EyJMapKzcBzJD7KacakSf/VOC4qrZF4bxwrRxyTagV7Lj33bAe/kfSZsfMvB2pqSiXHz8zepDzoORvhETgV5Qm68CX1QW/diGtR9GMI9vsoO+AZgKE9C8/Nxy6B8brgBTHujbWc9463rV52JsrO5cZVsaWTwChxzkTlaeW1GQP/705XaiqMQDdWbeV1EhglriXtx0aAf7w7MrNFl3INuYsgH8espAjy9m5yo6am1AU1NgAAAAAAAAAAAAAAYBz8BvyJPLlJKr/jAAAAAElFTkSuQmCC" alt="">Our Work</span>
+    <h1 data-reveal="fade" data-reveal-delay="1">Delivering Manpower Excellence Across India</h1>
+    <hr style="width: 15%; padding:1px;    background: #fff;    margin-top: -0.3rem;"/>
+    <p data-reveal="fade" data-reveal-delay="2">From steel plants to nuclear power corporations, hospitals to national security institutions — see how SUPRITA supports government and institutional operations every day.</p>
+    <!-- <div class="page-breadcrumb" data-reveal="fade" data-reveal-delay="3">
+      <a href="#">Home</a>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAABl0lEQVR42u3dwU3DQBRF0cGV0AtFUEREC4geIopIEamFlMICFixQBGSB/3vnLr300dgznpG8liRJkiRJkiRJkiRJkiRJkvRPnc6Xw+l8ObgTa23z8N5e1lrHtdYR4jDAD7y75y+X6hG3wXgQpwBewatH3ALwqhG3ELxaxLs9LxU+Z5t/6enx4f7VCJxbzUjcLeDnCHqCOHgEQgx4hEIMeAdCDJjEQAyYhUIMWEZADFgHQgxYyEMcDggxABBiyLfQZsSYj9mtiFG7EY2IcdtJbYiR+4FNiKkbujWIsYAtiNGADYjxgOmIFYDJiDWAqYhVgImIdYBp1QHeeOJ7rZ2d+t7gzcWrAkzEqwFMxasATMaLB0zHiwZswIsFbMGLBGzCiwNsw4sCbMSLAWzFiwBsxhsP2I43GhDeYEB4gwHhDQaENxgQ3mBAeIMB4Q0GhDcYEF74Qh7ezgFvOEFdg7f7EfgHxCq8EY/QXyDW4Y15B/4AsRJv1CTmCmIt3rhZ6DeI1Xhj8/s5SZIkSZIkSZIkSZIkSZIkpfUOhKw3YzchyWIAAAAASUVORK5CYII=" alt="" loading="lazy">
+      <span>About Us</span>
+    </div> -->
+    
+        <div style="width: 30%; height: 100%; top: 0;right: 0;" class="position-absolute top-0 ">
+        <div class="floating-box">
+    <span style="--x:10%;--y:20%;--d:0s;">Housekeeping</span>
+    <span style="--x:60%;--y:10%;--d:1s;">Security</span>
+    <span style="--x:35%;--y:60%;--d:2s;">Sanitation</span>
+    <span style="--x:75%;--y:50%;--d:3s;">Landscaping</span>
+    <span style="--x:15%;--y:75%;--d:4s;">Waste Management</span>
+</div>
+</div>
+  </div>
+</section>
+<!-- ============================ PAGE HEADING BANNER ============================ -->
+
+
+<!-- ============================ INDUSTRIES WE SERVE (light) ============================ -->
+<section class="section on-light">
+  <div class="abs-bg"><div class="abs-dots"></div></div>
+
+  <div class="container px-4 px-lg-5" style="position:relative;z-index:2;">
+    <div class="sec-head mx-auto" data-reveal="fade">
+      <div class="text-center"><span class="eyebrow"><img src="data:image/png;base64,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" alt="">Industries We Serve</span></div>
+      <h2 class="mt-3 text-center">Trusted Across Diverse Sectors</h2>
+      <p class="lead-p text-center mt-2">Our manpower solutions are trusted across diverse sectors — from central government departments to metro rail corporations.</p>
+    </div>
+
+    <div class="row gy-4 mt-4">
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="1">
+        <div class="industry-card"><div class="industry-card-img"><img src="./assets/images/govt_dept.png" alt=""></div><div class="industry-card-label">Government Departments</div></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="2">
+        <div class="industry-card"><div class="industry-card-img"><img src="./assets/images/municipal_corporations.png" alt=""></div><div class="industry-card-label">Municipal Corporations</div></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="3">
+        <div class="industry-card"><div class="industry-card-img"><img src="./assets/images/publicsectorundertakings.png" alt=""></div><div class="industry-card-label">Public Sector Undertakings</div></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="4">
+        <div class="industry-card"><div class="industry-card-img"><img src="./assets/images/EducationalInstitutions.png" alt=""></div><div class="industry-card-label">Educational Institutions</div></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="1">
+        <div class="industry-card"><div class="industry-card-img"><img src="./assets/images/hospital.png" alt=""></div><div class="industry-card-label">Hospitals</div></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="2">
+        <div class="industry-card"><div class="industry-card-img"><img src="./assets/images/metrorailways.png" alt=""></div><div class="industry-card-label">Railways</div></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="3">
+        <div class="industry-card"><div class="industry-card-img"><img src="./assets/images/railways.png" alt=""></div><div class="industry-card-label">Metro Rail</div></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="4">
+        <div class="industry-card"><div class="industry-card-img"><img src="./assets/images/corpoffice.png" alt=""></div><div class="industry-card-label">Corporate Offices</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CORE SERVICE HIGHLIGHTS (dark) ============================ -->
+<section class="section on-dark">
+  <div class="abs-bg"><div class="abs-dots on-dark"></div></div>
+
+  <div class="container px-4 px-lg-5" style="position:relative;z-index:2;">
+    <div class="sec-head mx-auto" data-reveal="fade">
+      <div class="text-center"><span class="eyebrow light"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACs0lEQVR42u3dMU4jQRCF4deIiBtsvhIpd9gYiYgjLDGClIgM7R6AE1hy5AtsRGyJA3AOMtQEDAgvIIHosfq9/kuy7Kjtrs9VM/a0eiSCcIpa6x5Z8IT7WWu9qrUuyIYn3MP0iALcTYaT9FvSWfIXdDcU7lLSMf3Hr1UuXrXKjx7rCZno9Bj32ccCSE84IE1aJZChFQdkKByQJq0SyEHgLCBL+A/w2+n5oOGYS0kXpZQ7ym2+Y9y61nr4fOVher2mtZrBvfOeQDrCARkCB2QIHJAhcECGwAEZAjckZCLcEJAjwEVCjggXAQmcKSRwppAzXdaJgvsvX3tdQFJxphUJnCkkcN6Qpdb60PjzHkn6V0q5h27zGCnpl6RVy3F3JJ03/qwrSSdU3xu8k9Z4L3bTGdTpDAuBrkaG3HpegTSF2+IHOE2G7C5vVGRInoAMyQuQIXkYFTJu3qNAxs8zdYLDdZqUCQ9/rHdNACdppgkBzjRBwJkmDDhTSOBMIZPhSi+Qerrg+afx0M8Xq+cY97qHVQelt4qcCTIObtTWyjFuMEjgTCGBM4W0W/Kxw9diI36QAloowUkMcMNA8kPe/Ic8f6Xxj0yXrXKYP7Oj4Xp5X+C4oAsckMEJAjIkIawHZWEvK7JZWs8EmSdwofPmbM00D8CZ5gU40zyxzUh3kJ/LGxVnWpHAGUPSKr1bK9tNbhFRM203uS/pb8MxV5Ju2PB1A+9Q0k1jvOVk9/Im7Nw7Axx7ZwP3rd3rue3A105Uur1/BBXZe8UBGQoHZAgckNxHkBtAcidP4IAELhcSOFNI4EwhgTOFBM4UEjhTyGS40hOkpEtJxw2HvZ2eDxqOuZR0UUq5E/FhRS5mWD9CqwxorcANBAmcKSRwpsdI4EwrEjhTSOBMIYEzhQTO9GQHOIIgCIIIjEcASb7hn/CoRwAAAABJRU5ErkJggg==" alt="">Core Services</span></div>
+      <h2 class="on-dark mt-3 text-center">What We Deliver</h2>
+      <p class="lead-p on-dark text-center mt-2">We deliver comprehensive manpower solutions tailored to government departments, institutions, and commercial facilities.</p>
+    </div>
+
+    <div class="row gy-4 mt-4">
+      <div class="col-md-6 col-lg-4" data-reveal="scale" data-reveal-delay="1">
+        <div class="svc-hl-card">
+          <div class="photo-box svc-hl-img"><img src="https://picsum.photos/seed/suprita-housekeeping-hl/500/350" alt="Housekeeping"></div>
+          <div class="svc-hl-body">
+            <h4>Housekeeping Excellence</h4>
+            <p>Clean, healthy, and hygienic environments through standardized cleaning protocols and trained manpower.</p>
+            <ul class="svc-hl-list"><li>Daily Cleaning</li><li>Deep Cleaning</li><li>Disinfection</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal="scale" data-reveal-delay="2">
+        <div class="svc-hl-card">
+          <div class="photo-box svc-hl-img"><img src="https://picsum.photos/seed/suprita-security-hl/500/350" alt="Security"></div>
+          <div class="svc-hl-body">
+            <h4>Security &amp; Facility Mgmt</h4>
+            <p>Professional security manpower deployed after verification and training, backed by facility support.</p>
+            <ul class="svc-hl-list"><li>Armed &amp; Unarmed Guards</li><li>Access Control</li><li>CCTV Monitoring</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal="scale" data-reveal-delay="3">
+        <div class="svc-hl-card">
+          <div class="photo-box svc-hl-img"><img src="https://picsum.photos/seed/suprita-facility-hl/500/350" alt="Facility Management"></div>
+          <div class="svc-hl-body">
+            <h4>Facility Management</h4>
+            <p>Complete maintenance support through skilled technical manpower for every facility need.</p>
+            <ul class="svc-hl-list"><li>Electrical</li><li>Plumbing</li><li>HVAC Maintenance</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal="scale" data-reveal-delay="4">
+        <div class="svc-hl-card">
+          <div class="photo-box svc-hl-img"><img src="https://picsum.photos/seed/suprita-waste-hl/500/350" alt="Waste Management"></div>
+          <div class="svc-hl-body">
+            <h4>Waste Management</h4>
+            <p>Supporting Clean India initiatives through organized door-to-door waste collection and management.</p>
+            <ul class="svc-hl-list"><li>Door-to-Door Collection</li><li>Waste Segregation</li><li>Scientific Disposal</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal="scale" data-reveal-delay="5">
+        <div class="svc-hl-card">
+          <div class="photo-box svc-hl-img"><img src="https://picsum.photos/seed/suprita-landscape-hl/500/350" alt="Landscaping"></div>
+          <div class="svc-hl-body">
+            <h4>Landscaping &amp; Horticulture</h4>
+            <p>Garden maintenance and landscape development for government campuses and public spaces.</p>
+            <ul class="svc-hl-list"><li>Garden Maintenance</li><li>Tree Plantation</li><li>Irrigation Support</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FEATURED CLIENT CASE STUDIES (light) ============================ -->
+<section class="section on-light">
+  <div class="abs-bg"><div class="abs-dots"></div><div class="abs-blob blob-blue" style="width:380px;height:380px;top:-100px;right:-100px;"></div></div>
+
+  <div class="container px-4 px-lg-5" style="position:relative;z-index:2;">
+    <div class="sec-head mx-auto" data-reveal="fade">
+      <div class="text-center"><span class="eyebrow"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEkUlEQVR42u2dP2xbVRTGv++aFcoQsQTbQlWpWKJKCKkREkqlSExNQp02DNgMTGGpSBgidcnSMY26NBMDfgylSZQ/TKBKFJYgIRDKRKkYYtMFZWl37mFwKiFhOffZz8599vebbb2n8/M57xy/++4DhBBCCCGEEEIIkRuYlxMtz9bHzGPKyCJhJXMcz/wgHgc0a9Lh0dFe7VgCM6A4k7wNYIWwyiCPa+C2oy3GLpIxZ5w3bgxa3P9EOm45s09jFRmlwOJcUqG3zZjOyRyvN3er2xJ4CqWr9XkQD6IsC4YbjW9qWxLY4XpH2M8xX3MMfKe5X/1FAtt1mYa/c9D3HZI2Hcs10UXzyyZX8jHQ2IQZbikDc5l9/wkc8VoMWfhSDMHwxiphqcqYAU/gUn2p0wBPAhcAm0hzzgDWJbBVBj5OIe6TfjURrUrAhyEiT855PYLY5ad8DqJsxXY+uWliQmawQQTraK92DMelwDJaHvku1Dymgn7tDo8GVpbMvgr83BsaI9JkxhAeK/8ZWKAhp8Rw7g4i10igBIqhmANPbsBW4TBJjzfT/KsxIqF+8e/RfWf2Q1aNUs8Cz2rJwxBwl8TtXkWyl4wzcgXeluSih062xzv97FZeDOtVhqcT4Z3GbvXzbr5a6CrzjA8Ju6LIZ5WGmDz31rWXn/2+811/u9DVVeeNG2pQ+oC3peJM8llfBRZ/PX9TZbOfI4GtnTSF2Qssz9bHCFtTmPs+130BGDMXGNM6kCG/IE6UribBVS7FHXleQeAKBnPcevGcwcjrKNDgUWrdwQ/rHYxcALAVmLFhw3rwes0IF7/GQHm2PubJe/Q2HyQm8G5/aAl9L8wdlyWvPUd7tePmpT8/NDBoaA+90e3C0tRKYfOoJVLVcQzzjrYYNqHz9eznwM7Zt52nO9lnmYkADwPmwnJmAoMepsxqjeYoNDbAk4CEGGwGirNBAiVQSKCQQAkUEigkUKQks+cDCUwW55IHCmlQrC7DRyYQ3sYJzEuPSqiQQAkUEigkUEigBIrRGOTh+NSAA4U0aJCfhLfxqAQacNDcrd6QntMpziSbBDJ5REElVNdAIYFCAiVQSKCQQCGBEigkUEigkEAJFBIoJFBIoAQKCRQSKCRQAoUEigELpLenp37Ix/lO+rxC2F+ZCTSwEXDASnm2PqbQd+Zk5+PKYDMwcONWb9zA6qrKcqdkID/KKmnCBQa+fJGwSvG38/eVie0pziUVeLsT+PEfw2IeevCZZDM89XlowJdwaPAfG+lroxVoBIrm8W6a+DX2q5dCPhn8bATNvgZD1/PbBIE1eGDUWxt6S5cprfh9n/kY0dpKOWCjUtG7dOJ2X+ZA0qYV3j6XXHA5zc7HqQQe7dWODVxWmPsmbzvtvuOpX371/PHOT+cufvAqgMsKeaaF89DRFtLuO17o5lDPHu98+8rFa88JvK/AZyOPtOluNo3veuhu7lfXzfG6gt8zd7uVl767bUPrfYK4BeCmXKS+3i2e2StY24r0mDJygcAFvWOwzZ8bDn/A48DREr1jQwghhBBCCCGEEEIIIYQQ+eBfsTKpfy0Oy2oAAAAASUVORK5CYII=" alt="">Our Work</span></div>
+      <h2 class="mt-3 text-center">Trusted By Leading Government &amp; Institutional Clients</h2>
+      <p class="lead-p text-center mt-2">Trusted by leading government and institutional clients for delivering quality-driven manpower and facility management services.</p>
+    </div>
+
+    <div class="row gy-4 mt-4">
+
+      <div class="col-md-6 col-lg-4" data-reveal="scale" data-reveal-delay="1">
+        <div class="case-card">
+          <div class="case-top">
+            <div class="case-badge">
+              <img src="./assets/images/sail.png" class="w-100"/>
+            </div>
+            <div><h4>Steel Authority of India Ltd.</h4><span class="case-loc">Department of Steel, Delhi</span></div>
+          </div>
+          <p class="desc">Providing skilled and reliable Multi-Tasking Staff (MTS) to support day-to-day administrative and operational requirements.</p>
+          <span class="case-service-chip">Multi-Tasking Staff (MTS)</span>
+          <ul class="case-scope">
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Administrative &amp; Office Support</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">File &amp; Document Handling</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Pantry &amp; Hospitality Support</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Dispatch &amp; Courier Assistance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-reveal="scale" data-reveal-delay="2">
+        <div class="case-card">
+          <div class="case-top">
+            <div class="case-badge">
+              <img src="./assets/images/npci.png" class="w-100"/>
+            </div>
+            <div><h4>Nuclear Power Corporation of India Ltd.</h4><span class="case-loc">Rajasthan</span></div>
+          </div>
+          <p class="desc">Providing professional housekeeping services for NPCIL, Rajasthan, ensuring clean, safe, and hygienic premises.</p>
+          <span class="case-service-chip">Housekeeping Services</span>
+          <ul class="case-scope">
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Daily Housekeeping &amp; Cleaning</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Floor &amp; Surface Maintenance</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Washroom Cleaning &amp; Sanitization</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Waste Collection &amp; Disposal</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-reveal="scale" data-reveal-delay="3">
+        <div class="case-card">
+          <div class="case-top">
+            <div class="case-badge">
+              <img src="./assets/images/dusib.png" class="w-100"/>
+            </div>
+            <div><h4>Delhi Urban Shelter Improvement Board</h4><span class="case-loc">Delhi</span></div>
+          </div>
+          <p class="desc">Providing professional housekeeping services for DUSIB, Delhi, ensuring clean, hygienic, and well-maintained public facilities.</p>
+          <span class="case-service-chip">Housekeeping Services</span>
+          <ul class="case-scope">
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Daily Housekeeping &amp; Cleaning</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Common Area Maintenance</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Floor Cleaning &amp; Mopping</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Waste Collection &amp; Disposal</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-reveal="scale" data-reveal-delay="4">
+        <div class="case-card">
+          <div class="case-top">
+            <div class="case-badge">
+              <img src="./assets/images/nit.png"class="w-100"/>
+            </div>
+            <div><h4>National Institute of Technology</h4><span class="case-loc">Jamshedpur</span></div>
+          </div>
+          <p class="desc">Providing professional housekeeping services at NIT Jamshedpur to maintain a clean, safe, and hygienic campus environment.</p>
+          <span class="case-service-chip">Housekeeping Services</span>
+          <ul class="case-scope">
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Academic Building Housekeeping</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Classroom &amp; Laboratory Cleaning</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Administrative Office Cleaning</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Common Area Maintenance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-reveal="scale" data-reveal-delay="5">
+        <div class="case-card">
+          <div class="case-top">
+            <div class="case-badge">
+              <img src="./assets/images/nsg.png"class="w-100"/>
+            </div>
+            <div><h4>National Security Guard</h4><span class="case-loc">Delhi</span></div>
+          </div>
+          <p class="desc">Providing skilled technical manpower to NSG, Delhi for the maintenance and upkeep of critical infrastructure.</p>
+          <span class="case-service-chip">Skilled Technical Manpower</span>
+          <ul class="case-scope">
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Carpenter &amp; Plumber Services</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Electrician &amp; Mason Services</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Painter Services</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">General Maintenance Support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-reveal="scale" data-reveal-delay="1">
+        <div class="case-card">
+          <div class="case-top">
+            <div class="case-badge">
+              <img src="./assets/images/nhmc.png"class="w-100"/>
+            </div>
+            <div><h4>Nehru Homoeopathic Medical College &amp; Hospital</h4><span class="case-loc">Delhi</span></div>
+          </div>
+          <p class="desc">Providing qualified nursing professionals to Nehru Homoeopathic Medical College &amp; Hospital (NHMC), Delhi.</p>
+          <span class="case-service-chip">Nursing Manpower Services</span>
+          <ul class="case-scope">
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Registered Nursing Staff</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Patient Care &amp; Assistance</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Ward &amp; OPD Support</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt="">Vital Signs Monitoring</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ COMPLIANCE & CERTIFICATIONS (dark) ============================ -->
+<section class="section on-dark">
+  <div class="abs-bg"><div class="abs-dots on-dark"></div></div>
+
+  <div class="container px-4 px-lg-5" style="position:relative;z-index:2;">
+    <div class="sec-head mx-auto" data-reveal="fade">
+      <div class="text-center"><span class="eyebrow light"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEtElEQVR42u2dv27UQBDGvz3RWXmDJF2UykdNGwmlSXUPgEBKb53yGFfRI4Fo0iAKKw2ijmjNpUJIKQhvgGhvKfChy+lI9v/O2t8nWQriEu/OzzM7Y/tmAYqiKIoap9RQJ6a1rgCc9/98o5T6TdwFQNNaz7TWrdZ6tXW0/f9VtJQ8cLXWerED2v8OwhTibY3WurMAt310PXiCFBAifQ96paAQ6XsstNY1LZ8/RPoe4kOskgYNwCmAlwDOhNnqCsA7AJ8klSRKSogE8ALARSEBQgxMldnbzgG8AjAtNNIvAbzNeaNAZYCWKkQuAXzuf36e4CIRGWJLzCJ3lgMSxsAs8uFssTExWORasuwbBYmN412vJb7I5HrlEMLT6EKs1BBZWBTxDrHKY6KrRFnke6XUTeb6NHoWq5SaDAWgyHQ89s2G0gFmL4hz17IlAsweIiWFWFeAPoPnc7eAWWyOAYvMIkuthaUCbMf8YLT3yrZkgDOMXL03RgM4AVW0CJAAKQKkCJAAKQKkCJAiQAKkCJAiQIoACZAiQIoAs2j9ZJ0AC4UH4BLAB631ggDLhLd+ZfBCMkQCfBgepEMkwMfhiYZIgGbwxEKcEJ4xPJEQJ4RnBW+tnwRYLry5Uur1WAAeJCy6K6HwDuiBj8O4BnBt2uRgCJ4XAuBSELxpfzwIUTC8pVQP3E8Eb60pgMtdEDPC25fqgT8MPnOcEN5aZ9sQM3vecSBbBgf4zeAzh4nhbUK83khucobNw0C23KknHgMzqYWmGeDdC6cbQHOtedNAtgwO8M7Q6HXA78CfWl4ULk0IgsGz+HLrnes5fELod8PPHYXyQKXURwDziDlB6GzzKLAtgwK8Nfzcs5AW7g08LwCezdxvkUOGbba6SOduAra8ajLap81ZSJu21agFQ4wFrzbtuJirDgSAL4afO4lhpADhNOYdlpPANoxTUJv2iYk8jkaK51mGz1X23jkWDW1qQRBjwzMNny1yy7QPSoqn2IYQmwTjWBTTR8cijK4SNWxtMsMTZY/QYbRJNJ5G2Lllhk+HMJrsqtsyZCMwGs0kAawssq4m4biaxOdbWHRvlNW50TILHFzbSUvva0qfQDtAgG3xF7ClF84GBG+Wy/tUaC8E8MviV/ZK3ygq95yDvtTUD8zm3uTlABzQZg5z8ResZUYqc0GPs2R0JW2CVVveWK4LhDfsOTq04K8Kmltlu8va0OuiYkKMwxJRbt1rmV6vtymohMNrh748+IZSkRAd4TUoXY4TFwXRcQ7dYG4ZOqyHYiA6whve/V6HtDs7RA94w9xuyCGpyRaKHLPN4W835PgGWZfyqu6jRSftTbeSM9NkV7djlBgPvAAQo+xDuLErt9N+9hibeoMtPHYBrQKPpSW8tBCDrIuO2THhBUhs/hnRxRs9Q+b41ryIyYO1N3pkmdyZNCLERxOcAF63GvOewKm8o9vlIYH+LuElyArvrY2eiVIRj7kkQwz5NeqVpLozlFQJIRXA10ynfxqwRUoUie9W2BtwD8BVwtNe4e/7mzegRGWprO+EZKltBHBMVApOcBrCK7PcoNcJWhs732KfKiOsMlwWAHIR6qkFlT9bbXkPk6IoiqKGpz8WZ5Usn0c/IwAAAABJRU5ErkJggg==" alt="">Compliance &amp; Trust</span></div>
+      <h2 class="on-dark mt-3 text-center">Compliance &amp; Certifications</h2>
+      <p class="lead-p on-dark text-center mt-2">SUPRITA follows stringent compliance standards to ensure risk-free manpower deployment.</p>
+    </div>
+
+    <div class="row gy-4 mt-4">
+      <div class="col-6 col-md-4 col-lg-2" data-reveal="scale" data-reveal-delay="1">
+        <div class="cert-item"><div class="cert-item-ico"><img src="./assets/images/iso.png" alt="" /></div><h4>ISO Certified</h4></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-reveal="scale" data-reveal-delay="2">
+        <div class="cert-item"><div class="cert-item-ico"><img src="./assets/images/pf.png" alt="" /></div><h4>PF Registered</h4></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-reveal="scale" data-reveal-delay="3">
+        <div class="cert-item"><div class="cert-item-ico"><img src="./assets/images/esic.png" alt=""></div><h4>ESIC Registered</h4></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-reveal="scale" data-reveal-delay="4">
+        <div class="cert-item"><div class="cert-item-ico"><img src="./assets/images/verifies.png" alt=""></div><h4>Background Verification</h4></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-reveal="scale" data-reveal-delay="5">
+        <div class="cert-item"><div class="cert-item-ico"><img src="./assets/images/payroll_icon.png" alt=""></div><h4>Payroll Compliance</h4></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-reveal="scale" data-reveal-delay="1">
+        <div class="cert-item"><div class="cert-item-ico"><img src="./assets/images/gst.png" alt="" style="width: 80%;height: 80%;"></div><h4>GST Registered</h4></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ OUR COMMITMENT (light) ============================ -->
+<section class="section on-light">
+  <div class="abs-bg"><div class="abs-dots"></div></div>
+
+  <div class="container px-4 px-lg-5" style="position:relative;z-index:2;">
+    <div class="sec-head mx-auto" data-reveal="fade">
+      <div class="text-center"><span class="eyebrow"><img src="data:image/png;base64,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" alt="">Our Commitment</span></div>
+      <h2 class="mt-3 text-center">Commitment</h2>
+      <p class="lead-p text-center mt-2">We don't just deploy manpower — we deliver dependable operational support that enhances productivity, safety, and service quality.</p>
+    </div>
+
+    <div class="row gy-4 mt-4">
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="1">
+        <div class="commit-box"><div class="commit-box-ico"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt=""></div><h4>Professional Workforce</h4></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="2">
+        <div class="commit-box"><div class="commit-box-ico"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt=""></div><h4>Timely Deployment</h4></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="3">
+        <div class="commit-box"><div class="commit-box-ico"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt=""></div><h4>Complete Compliance</h4></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="4">
+        <div class="commit-box"><div class="commit-box-ico"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt=""></div><h4>Transparent Communication</h4></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="1">
+        <div class="commit-box"><div class="commit-box-ico"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt=""></div><h4>Consistent Quality</h4></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="2">
+        <div class="commit-box"><div class="commit-box-ico"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt=""></div><h4>Reliable Supervision</h4></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="3">
+        <div class="commit-box"><div class="commit-box-ico"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt=""></div><h4>Customer Satisfaction</h4></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="scale" data-reveal-delay="4">
+        <div class="commit-box"><div class="commit-box-ico"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACZklEQVR42u3bv2oUURSA8XPXuO6CWVuLsFVg3yFtCl3EKYSU+wZLHkbSpnEDgTTRLYwgtha+gW1SW9gEd0XGxkCEJezs3HPvPXu+rxyYGTg/5s8dGBEiIiIiIiIiIiIiIiIiIiIiIiIiIiJaq72ji/6oOt3VOHaH8erjdZbL+W3oXj1/8e4pgAbxROrDIHLwuBc+xUYEMAHe3TYNRAAT4WkhApgQTwMRwMR4sREBzID3H2I/vG5z3h1GnwdPRERqOb75MDnnCjSKdz2fnPAMdIwHoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvEANI4HoHE8AI3jAWgcD0DjeAAaxwPQOB6AxvHcA1rHcw24DXhqgKPqdHfv6KIPnkHA/fHZ4DZ0r8Jy8VnjXwDwFAH3x2eDRbf+GEQOtP4FAE8J8D7e3baSELcRLxrgKrySELcVLwrgQ3glIG4zXmvAdfByIm47XmvAxZP61Tp49xG7vc5liiWGB7zWgDfvJ+dSy3GzvepD7SWGF7woz8Dr+eSkKaLm7dQTXrS30FIQveFFXQfmRvSIF/1LTC5Er3jRAXMgesZTAUyJ6B1PDTAFInjKgJqI4CUC1EAELzFgTETwVs4pXcNqNpUgb5vNXr7+/lW/3Bn0/oCXGXBTRJHw5Z8GeLkBN0dsmAM8EZFHOU768/vlt2ejNz8kyBg8g4CqiI7wsgKqIDrDyw4YFdEhXhGAURCd4hUD2ArRMV5RgBshOscrDrARInhlAq6FCF7ZgA8igmcDcCUieDYbVrPpsJpNmQQRERERERERERERERERERERERERERERxe8vrjuGKjSiI+kAAAAASUVORK5CYII=" alt=""></div><h4>Long-Term Partnership</h4></div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5" data-reveal="fade"><span class="ribbon-tagline">Professional People &bull; Proven Processes &bull; Trusted Performance</span></div>
+  </div>
+</section>
+
+<!-- ============================ WHY CHOOSE SUPRITA (dark) ============================ -->
+<section class="section on-dark">
+  <div class="abs-bg"><div class="abs-dots on-dark"></div></div>
+
+  <div class="container px-4 px-lg-5" style="position:relative;z-index:2;">
+    <div class="sec-head mx-auto" data-reveal="fade">
+      <div class="text-center"><span class="eyebrow light"><img src="iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEtElEQVR42u2dv27UQBDGvz3RWXmDJF2UykdNGwmlSXUPgEBKb53yGFfRI4Fo0iAKKw2ijmjNpUJIKQhvgGhvKfChy+lI9v/O2t8nWQriEu/OzzM7Y/tmAYqiKIoap9RQJ6a1rgCc9/98o5T6TdwFQNNaz7TWrdZ6tXW0/f9VtJQ8cLXWerED2v8OwhTibY3WurMAt310PXiCFBAifQ96paAQ6XsstNY1LZ8/RPoe4kOskgYNwCmAlwDOhNnqCsA7AJ8klSRKSogE8ALARSEBQgxMldnbzgG8AjAtNNIvAbzNeaNAZYCWKkQuAXzuf36e4CIRGWJLzCJ3lgMSxsAs8uFssTExWORasuwbBYmN412vJb7I5HrlEMLT6EKs1BBZWBTxDrHKY6KrRFnke6XUTeb6NHoWq5SaDAWgyHQ89s2G0gFmL4hz17IlAsweIiWFWFeAPoPnc7eAWWyOAYvMIkuthaUCbMf8YLT3yrZkgDOMXL03RgM4AVW0CJAAKQKkCJAAKQKkCJAiQAKkCJAiQIoACZAiQIoAs2j9ZJ0AC4UH4BLAB631ggDLhLd+ZfBCMkQCfBgepEMkwMfhiYZIgGbwxEKcEJ4xPJEQJ4RnBW+tnwRYLry5Uur1WAAeJCy6K6HwDuiBj8O4BnBt2uRgCJ4XAuBSELxpfzwIUTC8pVQP3E8Eb60pgMtdEDPC25fqgT8MPnOcEN5aZ9sQM3vecSBbBgf4zeAzh4nhbUK83khucobNw0C23KknHgMzqYWmGeDdC6cbQHOtedNAtgwO8M7Q6HXA78CfWl4ULk0IgsGz+HLrnes5fELod8PPHYXyQKXURwDziDlB6GzzKLAtgwK8Nfzcs5AW7g08LwCezdxvkUOGbba6SOduAra8ajLap81ZSJu21agFQ4wFrzbtuJirDgSAL4afO4lhpADhNOYdlpPANoxTUJv2iYk8jkaK51mGz1X23jkWDW1qQRBjwzMNny1yy7QPSoqn2IYQmwTjWBTTR8cijK4SNWxtMsMTZY/QYbRJNJ5G2Lllhk+HMJrsqtsyZCMwGs0kAawssq4m4biaxOdbWHRvlNW50TILHFzbSUvva0qfQDtAgG3xF7ClF84GBG+Wy/tUaC8E8MviV/ZK3ygq95yDvtTUD8zm3uTlABzQZg5z8ResZUYqc0GPs2R0JW2CVVveWK4LhDfsOTq04K8Kmltlu8va0OuiYkKMwxJRbt1rmV6vtymohMNrh748+IZSkRAd4TUoXY4TFwXRcQ7dYG4ZOqyHYiA6whve/V6HtDs7RA94w9xuyCGpyRaKHLPN4W835PgGWZfyqu6jRSftTbeSM9NkV7djlBgPvAAQo+xDuLErt9N+9hibeoMtPHYBrQKPpSW8tBCDrIuO2THhBUhs/hnRxRs9Q+b41ryIyYO1N3pkmdyZNCLERxOcAF63GvOewKm8o9vlIYH+LuElyArvrY2eiVIRj7kkQwz5NeqVpLozlFQJIRXA10ynfxqwRUoUie9W2BtwD8BVwtNe4e/7mzegRGWprO+EZKltBHBMVApOcBrCK7PcoNcJWhs732KfKiOsMlwWAHIR6qkFlT9bbXkPk6IoiqKGpz8WZ5Usn0c/IwAAAABJRU5ErkJggg==" alt="">Why Choose Us</span></div>
+      <h2 class="on-dark mt-3 text-center">Why Choose SUPRITA</h2>
+      <p class="lead-p on-dark text-center mt-2">Your Trusted Service Partner</p>
+    </div>
+
+    <div class="row gy-4 mt-4">
+      <div class="col-6 col-md-4 col-lg-3" data-reveal="scale" data-reveal-delay="1">
+        <div class="commit-box on-dark"><div class="commit-box-ico on-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAABHUlEQVR42u3asRHCMBBEUcfq0D24Q6euiyOBGGMw1or3Z66BfaNM0yRJkiRJkiRJkiRJkiRJkiRpV1XVqqpZIhdvraoNYi7e7XEQg/EgDoAHcQA8iAPgQRwA73mz9XLxFuvBEzx48OAJnuDBgwdP8AQPnuAJHjx48ARP8ODBgxc1ToOXi7f1+mUO3j68Lv89wnsPrytEeMfwukCE9xnepYjwvoN3CSK81wPNB8ZZf4EIb/9Qy4GRTn2J8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoSXjbjCy0eE90eI8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoQnSZIkSZIkSZIkSZIkSZIkSTqhO3zJCfCoaQg3AAAAAElFTkSuQmCC" alt=""></div><h4>Government Project Expertise</h4></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-reveal="scale" data-reveal-delay="2">
+        <div class="commit-box on-dark"><div class="commit-box-ico on-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAABHUlEQVR42u3asRHCMBBEUcfq0D24Q6euiyOBGGMw1or3Z66BfaNM0yRJkiRJkiRJkiRJkiRJkiRpV1XVqqpZIhdvraoNYi7e7XEQg/EgDoAHcQA8iAPgQRwA73mz9XLxFuvBEzx48OAJnuDBgwdP8AQPnuAJHjx48ARP8ODBgxc1ToOXi7f1+mUO3j68Lv89wnsPrytEeMfwukCE9xnepYjwvoN3CSK81wPNB8ZZf4EIb/9Qy4GRTn2J8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoSXjbjCy0eE90eI8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoQnSZIkSZIkSZIkSZIkSZIkSTqhO3zJCfCoaQg3AAAAAElFTkSuQmCC" alt=""></div><h4>Statutory Compliance</h4></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-reveal="scale" data-reveal-delay="3">
+        <div class="commit-box on-dark"><div class="commit-box-ico on-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAABHUlEQVR42u3asRHCMBBEUcfq0D24Q6euiyOBGGMw1or3Z66BfaNM0yRJkiRJkiRJkiRJkiRJkiRpV1XVqqpZIhdvraoNYi7e7XEQg/EgDoAHcQA8iAPgQRwA73mz9XLxFuvBEzx48OAJnuDBgwdP8AQPnuAJHjx48ARP8ODBgxc1ToOXi7f1+mUO3j68Lv89wnsPrytEeMfwukCE9xnepYjwvoN3CSK81wPNB8ZZf4EIb/9Qy4GRTn2J8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoSXjbjCy0eE90eI8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoQnSZIkSZIkSZIkSZIkSZIkSTqhO3zJCfCoaQg3AAAAAElFTkSuQmCC" alt=""></div><h4>Skilled Workforce</h4></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-reveal="scale" data-reveal-delay="4">
+        <div class="commit-box on-dark"><div class="commit-box-ico on-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAABHUlEQVR42u3asRHCMBBEUcfq0D24Q6euiyOBGGMw1or3Z66BfaNM0yRJkiRJkiRJkiRJkiRJkiRpV1XVqqpZIhdvraoNYi7e7XEQg/EgDoAHcQA8iAPgQRwA73mz9XLxFuvBEzx48OAJnuDBgwdP8AQPnuAJHjx48ARP8ODBgxc1ToOXi7f1+mUO3j68Lv89wnsPrytEeMfwukCE9xnepYjwvoN3CSK81wPNB8ZZf4EIb/9Qy4GRTn2J8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoSXjbjCy0eE90eI8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoQnSZIkSZIkSZIkSZIkSZIkSTqhO3zJCfCoaQg3AAAAAElFTkSuQmCC" alt=""></div><h4>Quality Assurance</h4></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-reveal="scale" data-reveal-delay="1">
+        <div class="commit-box on-dark"><div class="commit-box-ico on-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAABHUlEQVR42u3asRHCMBBEUcfq0D24Q6euiyOBGGMw1or3Z66BfaNM0yRJkiRJkiRJkiRJkiRJkiRpV1XVqqpZIhdvraoNYi7e7XEQg/EgDoAHcQA8iAPgQRwA73mz9XLxFuvBEzx48OAJnuDBgwdP8AQPnuAJHjx48ARP8ODBgxc1ToOXi7f1+mUO3j68Lv89wnsPrytEeMfwukCE9xnepYjwvoN3CSK81wPNB8ZZf4EIb/9Qy4GRTn2J8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoSXjbjCy0eE90eI8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoQnSZIkSZIkSZIkSZIkSZIkSTqhO3zJCfCoaQg3AAAAAElFTkSuQmCC" alt=""></div><h4>Fast Deployment</h4></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-reveal="scale" data-reveal-delay="2">
+        <div class="commit-box on-dark"><div class="commit-box-ico on-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAABHUlEQVR42u3asRHCMBBEUcfq0D24Q6euiyOBGGMw1or3Z66BfaNM0yRJkiRJkiRJkiRJkiRJkiRpV1XVqqpZIhdvraoNYi7e7XEQg/EgDoAHcQA8iAPgQRwA73mz9XLxFuvBEzx48OAJnuDBgwdP8AQPnuAJHjx48ARP8ODBgxc1ToOXi7f1+mUO3j68Lv89wnsPrytEeMfwukCE9xnepYjwvoN3CSK81wPNB8ZZf4EIb/9Qy4GRTn2J8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoSXjbjCy0eE90eI8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoQnSZIkSZIkSZIkSZIkSZIkSTqhO3zJCfCoaQg3AAAAAElFTkSuQmCC" alt=""></div><h4>Transparent Operations</h4></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-reveal="scale" data-reveal-delay="3">
+        <div class="commit-box on-dark"><div class="commit-box-ico on-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAABHUlEQVR42u3asRHCMBBEUcfq0D24Q6euiyOBGGMw1or3Z66BfaNM0yRJkiRJkiRJkiRJkiRJkiRpV1XVqqpZIhdvraoNYi7e7XEQg/EgDoAHcQA8iAPgQRwA73mz9XLxFuvBEzx48OAJnuDBgwdP8AQPnuAJHjx48ARP8ODBgxc1ToOXi7f1+mUO3j68Lv89wnsPrytEeMfwukCE9xnepYjwvoN3CSK81wPNB8ZZf4EIb/9Qy4GRTn2J8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoSXjbjCy0eE90eI8IIR4QUjwgtGhBeMCC8YEV4wIrxgRHjBiPCCEeEFI8ILRoQnSZIkSZIkSZIkSZIkSZIkSTqhO3zJCfCoaQg3AAAAAElFTkSuQmCC" alt=""></div><h4>Dedicated Support</h4></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CLOSING CONTACT PROMPT (light) ============================ -->
+<section class="section on-light">
+  <div class="abs-bg"><div class="abs-dots"></div></div>
+
+  <div class="container px-4 px-lg-5 text-center" style="position:relative;z-index:2;" data-reveal="fade">
+    <span class="eyebrow"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEkUlEQVR42u2dP2xbVRTGv++aFcoQsQTbQlWpWKJKCKkREkqlSExNQp02DNgMTGGpSBgidcnSMY26NBMDfgylSZQ/TKBKFJYgIRDKRKkYYtMFZWl37mFwKiFhOffZz8599vebbb2n8/M57xy/++4DhBBCCCGEEEIIkRuYlxMtz9bHzGPKyCJhJXMcz/wgHgc0a9Lh0dFe7VgCM6A4k7wNYIWwyiCPa+C2oy3GLpIxZ5w3bgxa3P9EOm45s09jFRmlwOJcUqG3zZjOyRyvN3er2xJ4CqWr9XkQD6IsC4YbjW9qWxLY4XpH2M8xX3MMfKe5X/1FAtt1mYa/c9D3HZI2Hcs10UXzyyZX8jHQ2IQZbikDc5l9/wkc8VoMWfhSDMHwxiphqcqYAU/gUn2p0wBPAhcAm0hzzgDWJbBVBj5OIe6TfjURrUrAhyEiT855PYLY5ad8DqJsxXY+uWliQmawQQTraK92DMelwDJaHvku1Dymgn7tDo8GVpbMvgr83BsaI9JkxhAeK/8ZWKAhp8Rw7g4i10igBIqhmANPbsBW4TBJjzfT/KsxIqF+8e/RfWf2Q1aNUs8Cz2rJwxBwl8TtXkWyl4wzcgXeluSih062xzv97FZeDOtVhqcT4Z3GbvXzbr5a6CrzjA8Ju6LIZ5WGmDz31rWXn/2+811/u9DVVeeNG2pQ+oC3peJM8llfBRZ/PX9TZbOfI4GtnTSF2Qssz9bHCFtTmPs+130BGDMXGNM6kCG/IE6UribBVS7FHXleQeAKBnPcevGcwcjrKNDgUWrdwQ/rHYxcALAVmLFhw3rwes0IF7/GQHm2PubJe/Q2HyQm8G5/aAl9L8wdlyWvPUd7tePmpT8/NDBoaA+90e3C0tRKYfOoJVLVcQzzjrYYNqHz9eznwM7Zt52nO9lnmYkADwPmwnJmAoMepsxqjeYoNDbAk4CEGGwGirNBAiVQSKCQQAkUEigkUKQks+cDCUwW55IHCmlQrC7DRyYQ3sYJzEuPSqiQQAkUEigkUEigBIrRGOTh+NSAA4U0aJCfhLfxqAQacNDcrd6QntMpziSbBDJ5REElVNdAIYFCAiVQSKCQQCGBEigkUEigkEAJFBIoJFBIoAQKCRQSKCRQAoUEigELpLenp37Ix/lO+rxC2F+ZCTSwEXDASnm2PqbQd+Zk5+PKYDMwcONWb9zA6qrKcqdkID/KKmnCBQa+fJGwSvG38/eVie0pziUVeLsT+PEfw2IeevCZZDM89XlowJdwaPAfG+lroxVoBIrm8W6a+DX2q5dCPhn8bATNvgZD1/PbBIE1eGDUWxt6S5cprfh9n/kY0dpKOWCjUtG7dOJ2X+ZA0qYV3j6XXHA5zc7HqQQe7dWODVxWmPsmbzvtvuOpX371/PHOT+cufvAqgMsKeaaF89DRFtLuO17o5lDPHu98+8rFa88JvK/AZyOPtOluNo3veuhu7lfXzfG6gt8zd7uVl767bUPrfYK4BeCmXKS+3i2e2StY24r0mDJygcAFvWOwzZ8bDn/A48DREr1jQwghhBBCCCGEEEIIIYQQ+eBfsTKpfy0Oy2oAAAAASUVORK5CYII=" alt="">Get In Touch</span>
+    <h2 class="mt-3">Let's Build Better Workplaces Together</h2>
+    <p class="lead-p mt-2" style="max-width:600px;margin:0 auto;">Whether you require housekeeping, security, facility management, waste collection, or specialized manpower, our team is ready to support your organization with dependable and compliant solutions.</p>
+
+    <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
+      <a href="tel:+919971555289" class="btn btn-primary-c">Call Now &rarr;</a>
+      <a href="mailto:info@suprita.co.in" class="btn btn-outline-c">Email Us</a>
+    </div>
+
+    <div class="contact-mini">
+      <div class="contact-mini-chip"><img src="data:image/png;base64,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" alt="">+91 99715 55289</div>
+      <div class="contact-mini-chip"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAFa0lEQVR42u2dz2scZRjHn+fdmfWgECP10joNIRDUQm8qveixJIfdLc2Kh2SDEGMOHgR/FPSsEPIPyHpKNkhoEpLsISUoepT0KAQhkIYw1ovaIhShk5338bBb2oQmeXf3ndmZyfcDuS27L883n3nmfWfmHSIAAAAAAAAAAAAAAAAAAAAAAAAA2Idtf+HQyGJf4OrXSfHLpOUllLiJw3KXiGh/Y9JPXIAXx5b6c8HhFDNVROQK4jql4Mw7IrSQP+Tq3p3xf3sa4GBx3gtZfSJavkA0HRRf8Zz7mL/tJsiOA/QKC+8Q0a+IwcrhdaDTQ6vqMLybCM8eDeGDVk2jN9Ar1a6TljsoewQoHvHXJ7YiC/DS6OIrytF/o9LRoRvqwv3N8QeRHEJzjnyPEkdLuzU2NhAnLbFyza9Xtq0ayMRfoq4xTS/aqLWRgYPFea8hfNDGGMphPv/znysfPEQcTxc6iGTW9tTCMTrNZfUmiRitMoSH/F47Tfg80PpHnhsszi+FpDZNVqsawm8T0ZkBmh1CNV01+ZiITCG8k9nfmPRFZMro0KhowGYPHDKxz7Txnmf8emWbmXfOlEHzsLUAmejVs/WjXcRjhjD9bqXmpgGKotDGZ0AbIRvWU9n6QdaUQ9njr5Vj7T+G5IZXqt0OHfdjTB9OOJEYWewLXJkVkhu2vlNZHaGWsVwQ/NPpynqW8Uq164GrHxLJtM3vdSIa77JXqq3AxqfWkbYbXDQGwsZYrIvDwHNtY9TWxWPgObUxDuviNvCojYVa1WH9je3b63pNc8FffR2HdfEbeHTCMd3NPSBJta55tSbe8HphYKZ6Y5y9LkEGZqM3xt3rkmhgKm1MgnWRGMjEa0RczbKNXmHhZvfWcbVZq4QFKIpCvz4xQ4pHLNh4++LYUn+SrPMKte+IaLnLryr79YkZm1durPdAf31iK3+o+rNio5Vep3hFN9QFv15ZTUUPbD2sMeOVamtd3sXds95osdeV/fWJ1ajGGelZaFptTLp1sZ6FpsnGtFjXk3lg0m1Mk3U9mwcm0cY0WtfzlZik2JhW6xKxEtNLG9NuXc8N7KWNWbAuEQbGbWOWrEtcgM/aODSy2B+4MtuxIU0bx7xC7RaR3CPFj0jT1YD0bHej42r+kG/Z2BokswHatbH1KJcWG8Mq+/XkWJeoHhhpb+y6Osnpdakx8Lk2FhZ+pO6vBKS616XOwCM21iursdmYAutSY2BEZ6qpty51BkbeG1NmXSoNjLA3ps66VBt4vDfqhrrQiY2seC6t1qXewGdpbaowc2l08SuVl7dY0/Tznr9j5h0S2hWSH3RD/ZKVzRgcygitQLZafzRYnPceuy884v8anHfDF/c3Kpm6lT9zAR7n2LMXmd36RBFAgAABAgSIAAECBAgQIEAECLIVoMnmbNjszi6m9TTbbpLor7N/kYZRdsNwhN6wUvM2DqF7Z/6gyJXB4ryHeE5nsDjvGb7hbc9igHLP5FMhqU2EeDJDI4t9IalNw+b2m8nHjK5G5A/VT4GrycTCBvHB5dLC5zmR5aztxtRNcIEr0wHpWTK8TTV03LtGh2PTQVwu1FZtblQKTrOPV/z1ifetTiNyrD9FZePBEf2Z9Xng/sakT4pXUN6Iz1CJ19ppPW1N5HXAMyhxtIQN/sj6RP4J9zfHH1jYyAecTLndm63aXkprvWGyjFrbD6+TWxw7Wgtt/dA1k1fIgDN6HvOOwzLQ6f2pHS9m+/XKdo70aE8f/0p/fNWG677bzXyZbQyj+T55LpPwh4bLROfaOBFacFgv2VjoYNsDbL7sMBgmotcQ1xH+CPP5XbzVBgAAAAAAAAAAAAAAAAAAAAAAAEgD/wPfOjHNNqP+LAAAAABJRU5ErkJggg==" alt="">info@suprita.co.in</div>
+      <div class="contact-mini-chip"><img src="data:image/png;base64,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" alt="">www.suprita.co.in</div>
+    </div>
+  </div>
+</section>
 
 
 <!-- ============================ FOOTER ============================ -->

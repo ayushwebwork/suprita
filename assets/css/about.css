@@ -57,8 +57,8 @@
 .hero-badge-chip img{width:16px;height:16px;color:#fff;}
 
 /* ---- about intro collage ---- */
-.collage-tall{height:500px;}
-.collage-wide{height:238px;}
+.collage-tall{height:426px;}
+.collage-wide{height:205px;}
 .collage-badge-card{background:linear-gradient(135deg,var(--navy),var(--navy-3));color:#fff;border-radius:16px;padding:22px 24px;margin-top:18px;position:relative;overflow:hidden;}
 .collage-badge-card .num{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.6rem;color:#fff;}
 .collage-badge-card p{color:#cddcf3;font-size:.86rem;margin:2px 0 0;}
@@ -149,4 +149,171 @@
   .collage-wide{height:180px;}
   .story-image{height:360px;}
   .vision-image{min-height:300px;margin-top:24px;}
+}
+
+
+  .certification-section{
+    background:#f7f9fc;
+    position:relative;
+    overflow:hidden;
+}
+
+.certification-section::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle,#d9e3ef 1px,transparent 1px);
+    background-size:16px 16px;
+    opacity:.25;
+    pointer-events:none;
+}
+
+.cert-badge{
+    background:#e9f1ff;
+    color:#0d4eb3;
+    font-weight:600;
+    border-radius:50px;
+    letter-spacing:1px;
+}
+
+.title-line{
+    width:70px;
+    height:4px;
+    background:#0d4eb3;
+    border-radius:20px;
+}
+
+.certificate-card{
+    background:#fff;
+    border-radius:18px;
+    padding:18px;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.certificate-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+}
+
+.certificate-card img{
+    width:100%;
+    /* max-height:270px; */
+    /* object-fit:contain; */
+    height: 24rem;
+        border-radius: 0.8rem;
+}
+
+.certificate-card small{
+    display:block;
+    margin-top:15px;
+    color:#666;
+    font-size:.72rem;
+    font-weight:600;
+}
+
+.certificate-card h6{
+    color:#123b7c;
+    font-weight:700;
+    margin-top:6px;
+}
+
+.feature-box{
+    background:linear-gradient(90deg,#0a2f74,#133f8f);
+    border-radius:22px;
+    padding:25px;
+    color:#fff;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.feature-item{
+    border-right:1px solid rgba(255,255,255,.18);
+    padding:0 15px;
+    height:100%;
+}
+
+.feature-item i{
+    font-size:2rem;
+    margin-bottom:18px;
+    display:block;
+}
+
+.feature-item h6{
+    font-weight:500;
+    line-height:1.6;
+    margin-bottom:0;
+}
+
+@media(max-width:991px){
+
+.feature-item{
+    border-right:none;
+}
+
+}
+
+@media(max-width:768px){
+
+.certification-section{
+    padding:70px 0;
+}
+
+.display-6{
+    font-size:2rem;
+}
+
+.certificate-card{
+    padding:14px;
+}
+
+.certificate-card img{
+    max-height:220px;
+}
+
+.feature-box{
+    padding:18px;
+}
+
+.feature-item{
+    padding:15px 8px;
+}
+
+.feature-item i{
+    font-size:1.8rem;
+}
+
+.feature-item h6{
+    font-size:.92rem;
+}
+
+}
+
+@media(max-width:576px){
+
+.display-6{
+    font-size:1.7rem;
+}
+
+.cert-badge{
+    font-size:.75rem;
+}
+
+.certificate-card img{
+    max-height:180px;
+}
+
+.certificate-card small{
+    font-size:.65rem;
+}
+
+.certificate-card h6{
+    font-size:.9rem;
+}
+
+.feature-item h6{
+    font-size:.82rem;
+}
+
 }
