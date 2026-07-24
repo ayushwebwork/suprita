@@ -94,10 +94,10 @@ h2.on-dark,h3.on-dark,h4.on-dark{color:#fff;}
 .cert-item h4{color:#fff;font-size:.96rem;margin:0;font-weight: normal;}
 
 /* ---- commitment / why-choose modern boxes ---- */
-.commit-box{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px 18px;text-align:center;height:100%;transition:all .4s var(--ease);position:relative;z-index:2;}
+.commit-box{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 18px;text-align:center;height:100%;transition:all .4s var(--ease);position:relative;z-index:2;border-bottom: 5px solid #155abd;}
 .commit-box:hover{transform:translateY(-8px);box-shadow:0 24px 42px -20px rgba(10,36,64,.2);border-color:transparent;}
-.commit-box-ico{width:52px;height:52px;border-radius:50%;margin:0 auto 14px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;}
-.commit-box-ico img{width:22px;height:22px;}
+.commit-box-ico{width:5rem;height:5rem;border-radius:100%;margin:0 auto 14px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;overflow: hidden;}
+.commit-box-ico img{width:100%;height:100%;}
 .commit-box h4{font-size:.94rem;margin:0;line-height:1.35;}
 .commit-box.on-dark{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16);backdrop-filter:blur(6px);}
 .commit-box.on-dark:hover{background:rgba(255,255,255,.11);}
@@ -114,3 +114,9 @@ h2.on-dark,h3.on-dark,h4.on-dark{color:#fff;}
 .contact-mini-chip img{width:18px;height:18px;}
 
 @media (max-width:991px){.svc-hl-img{height:150px;}}
+
+.commit-box-para{
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top:0.5rem;
+}

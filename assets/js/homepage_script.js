@@ -103,7 +103,7 @@ statNums.forEach(el=>countIO.observe(el));
 /* ---------- Hero slider: typing effect + photo crossfade + nav ---------- */
 const heroCarouselEl = document.getElementById('heroCarousel');
 const heroItems = heroCarouselEl.querySelectorAll('.carousel-item');
-const heroCarousel = new bootstrap.Carousel(heroCarouselEl, {interval:999000, wrap:true});
+const heroCarousel = new bootstrap.Carousel(heroCarouselEl, {interval:3000, wrap:true});
 const heroPhotoSlides = document.querySelectorAll('.hero-photo-slide');
 const dotsWrap = document.getElementById('heroDots');
 const heroCountEl = document.getElementById('heroCount1');
@@ -152,7 +152,7 @@ runHeroSlide(heroItems[0], 0);
 
 (function(){
   var carouselEl = document.getElementById('testiRotateCarousel');
-  var carousel = new bootstrap.Carousel(carouselEl, {interval:5000, wrap:true, pause:false});
+  var carousel = new bootstrap.Carousel(carouselEl, {interval:1000, wrap:true, pause:false});
   var dotsWrap = document.getElementById('testiDotsWrap');
   var progressBar = document.getElementById('testiProgressBar');
   var items = carouselEl.querySelectorAll('.carousel-item');
