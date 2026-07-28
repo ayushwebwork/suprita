@@ -1008,49 +1008,114 @@
         <div class="contact-form-card">
           <h4 class="h5 mb-1">Request a Free Quote</h4>
           <p class="text-muted-2 small mb-4">Fill in your requirements and our team will get back to you within 24 hours.</p>
-          <form onsubmit="return false;" netlify name="homepage_form">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label-c">First Name *</label>
-                <input type="text" class="form-control-c" placeholder="Enter first name" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label-c">Last Name *</label>
-                <input type="text" class="form-control-c" placeholder="Enter last name" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label-c">Email Address *</label>
-                <input type="email" class="form-control-c" placeholder="your@email.com" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label-c">Phone Number *</label>
-                <input type="tel" class="form-control-c" placeholder="+91 XXXXX XXXXX" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label-c">Organization / Department *</label>
-                <input type="text" class="form-control-c" placeholder="e.g. Municipal Corporation, PSU name" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label-c">Service Required *</label>
-                <select class="form-select-c" required>
-                  <option value="" selected disabled>Select a service</option>
-                  <option>Housekeeping Services</option>
-                  <option>Security Guard Services</option>
-                  <option>Facility Management</option>
-                  <option>Garbage Collection</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <label class="form-label-c">Tell us about your requirements *</label>
-                <textarea class="form-control-c" placeholder="Describe your manpower needs, deployment location, timeline, and any specific requirements..." required></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-navy w-100 w-md-auto">Send Inquiry &nbsp;&#9993;</button>
-                <p class="small text-muted-2 mt-2 mb-0">By submitting this form, you agree to our Privacy Policy and Terms of Service.</p>
-              </div>
-            </div>
-          </form>
+          <form
+  name="homepage_form"
+  method="POST"
+  action="/thank-you.html"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+>
+
+  <!-- Required by Netlify -->
+  <input type="hidden" name="form-name" value="homepage_form">
+
+  <!-- Spam Protection -->
+  <p hidden>
+    <label>Don't fill this out:
+      <input name="bot-field">
+    </label>
+  </p>
+
+  <div class="row g-3">
+
+    <div class="col-md-6">
+      <label class="form-label-c">First Name *</label>
+      <input
+        type="text"
+        name="first_name"
+        class="form-control-c"
+        placeholder="Enter first name"
+        required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label-c">Last Name *</label>
+      <input
+        type="text"
+        name="last_name"
+        class="form-control-c"
+        placeholder="Enter last name"
+        required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label-c">Email Address *</label>
+      <input
+        type="email"
+        name="email"
+        class="form-control-c"
+        placeholder="your@email.com"
+        required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label-c">Phone Number *</label>
+      <input
+        type="tel"
+        name="phone"
+        class="form-control-c"
+        placeholder="+91 XXXXX XXXXX"
+        required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label-c">Organization / Department *</label>
+      <input
+        type="text"
+        name="organization"
+        class="form-control-c"
+        placeholder="e.g. Municipal Corporation, PSU name"
+        required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label-c">Service Required *</label>
+      <select
+        name="service"
+        class="form-select-c"
+        required>
+        <option value="" selected disabled>Select a service</option>
+        <option value="Housekeeping Services">Housekeeping Services</option>
+        <option value="Security Guard Services">Housekeeping Services</option>
+        <option value="Facility Management">Facility Management</option>
+        <option value="Garbage Collection">Garbage Collection</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label-c">Tell us about your requirements *</label>
+      <textarea
+        name="message"
+        class="form-control-c"
+        rows="5"
+        placeholder="Describe your manpower needs, deployment location, timeline, and any specific requirements..."
+        required></textarea>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-navy w-100 w-md-auto">
+        Send Inquiry &#9993;
+      </button>
+
+      <p class="small text-muted-2 mt-2 mb-0">
+        By submitting this form, you agree to our Privacy Policy and Terms of Service.
+      </p>
+    </div>
+
+  </div>
+</form>
+
         </div>
       </div>
     </div>
