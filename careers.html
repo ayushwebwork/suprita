@@ -390,135 +390,198 @@
     <div class="row justify-content-center mt-4">
       <div class="col-lg-9">
         <div class="apply-form-card" data-reveal="fade">
-          <form
-  name="career_form"
-  method="POST"
-  action="/thank-you.html"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  enctype="multipart/form-data"
+         <form
+    id="careerForm"
+    name="career_form"
+    method="POST"
+    action="/thank-you.html"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
 >
 
-  <!-- Required by Netlify -->
-  <input type="hidden" name="form-name" value="career_form">
+    <!-- Netlify Required -->
+    <input type="hidden" name="form-name" value="career_form">
 
-  <!-- Spam Protection -->
-  <p hidden>
-    <label>Don't fill this out:
-      <input name="bot-field">
-    </label>
-  </p>
+    <!-- Cloudinary Resume URL -->
+    <input type="hidden" id="resume_url" name="resume_url">
 
-  <div class="row g-3">
+    <!-- Honeypot -->
+    <p hidden>
+        <label>Don't fill this out:
+            <input name="bot-field">
+        </label>
+    </p>
 
-    <div class="col-md-6">
-      <label class="form-label-c">First Name *</label>
-      <input
-        type="text"
-        name="first_name"
-        class="form-control-c"
-        placeholder="Enter first name"
-        required>
+    <div class="row g-3">
+
+        <div class="col-md-6">
+            <label class="form-label-c">First Name *</label>
+            <input
+                type="text"
+                name="first_name"
+                class="form-control-c"
+                placeholder="Enter first name"
+                required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label-c">Last Name *</label>
+            <input
+                type="text"
+                name="last_name"
+                class="form-control-c"
+                placeholder="Enter last name"
+                required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label-c">Email Address *</label>
+            <input
+                type="email"
+                name="email"
+                class="form-control-c"
+                placeholder="your@email.com"
+                required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label-c">Phone Number *</label>
+            <input
+                type="tel"
+                name="phone"
+                class="form-control-c"
+                placeholder="+91 XXXXX XXXXX"
+                required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label-c">Position Applied For *</label>
+            <select
+                name="position"
+                class="form-select-c"
+                required>
+
+                <option value="" selected disabled>Select a position</option>
+                <option>Housekeeping Staff</option>
+                <option>Security Guard</option>
+                <option>Facility Technician</option>
+                <option>Site Supervisor</option>
+                <option>Pantry & Kitchen Staff</option>
+                <option>Driver</option>
+                <option>Other</option>
+
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label-c">Total Experience</label>
+
+            <select
+                name="experience"
+                class="form-select-c">
+
+                <option value="">Select range</option>
+                <option>Fresher</option>
+                <option>1–2 Years</option>
+                <option>3–5 Years</option>
+                <option>5+ Years</option>
+
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label-c">Preferred Location</label>
+
+            <input
+                type="text"
+                name="preferred_location"
+                class="form-control-c"
+                placeholder="Delhi, Noida, Gurgaon">
+        </div>
+
+        <!-- Resume Upload -->
+
+        <div class="col-md-6">
+
+            <label class="form-label-c">Upload Résumé *</label>
+
+            <div id="uploadZone" class=" upload-zone d-flex align-items-center gap-2 justify-content-center" style="cursor:pointer;background: var(--bg);border: 1.5px solid var(--line);border-radius: 10px;">
+
+                <i class="bi bi-cloud-arrow-up fs-2"></i>
+
+                <p class="mb-1">
+                    Click or Drag & Drop your resume
+                </p>
+
+                
+
+            </div>
+            <small style="font-size: 0.6rem;">
+                    PDF, DOC or DOCX (Max 10 MB)
+                </small>
+
+            <!-- IMPORTANT: No name attribute -->
+            <input
+                type="file"
+                id="resume"
+                class="d-none"
+                accept=".pdf,.doc,.docx">
+
+            <div id="resumeName" class="mt-2 d-none">
+
+                <i class="bi bi-file-earmark-check-fill text-success"></i>
+
+                <span></span>
+
+            </div>
+
+            <div id="uploadProgress" class="progress mt-2 d-none">
+
+                <div
+                    id="uploadBar"
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    style="width:0%">
+
+                    0%
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12">
+
+            <label class="form-label-c">Tell Us About Yourself</label>
+
+            <textarea
+                name="about"
+                class="form-control-c"
+                rows="5"
+                placeholder="Brief work history, availability, certifications, etc."></textarea>
+
+        </div>
+
+        <div class="col-12">
+
+            <button
+                type="submit"
+                class="btn btn-primary-c">
+
+                Submit Application
+                <i class="bi bi-send-fill ms-1"></i>
+
+            </button>
+
+            <p class="small text-muted-2 mt-2 mb-0">
+                By submitting this application, you agree to our Privacy Policy and Terms of Service.
+            </p>
+
+        </div>
+
     </div>
 
-    <div class="col-md-6">
-      <label class="form-label-c">Last Name *</label>
-      <input
-        type="text"
-        name="last_name"
-        class="form-control-c"
-        placeholder="Enter last name"
-        required>
-    </div>
-
-    <div class="col-md-6">
-      <label class="form-label-c">Email Address *</label>
-      <input
-        type="email"
-        name="email"
-        class="form-control-c"
-        placeholder="your@email.com"
-        required>
-    </div>
-
-    <div class="col-md-6">
-      <label class="form-label-c">Phone Number *</label>
-      <input
-        type="tel"
-        name="phone"
-        class="form-control-c"
-        placeholder="+91 XXXXX XXXXX"
-        required>
-    </div>
-
-    <div class="col-md-6">
-      <label class="form-label-c">Position Applied For *</label>
-      <select
-        name="position"
-        class="form-select-c"
-        required>
-        <option value="" selected disabled>Select a position</option>
-        <option value="Housekeeping Staff">Housekeeping Staff</option>
-        <option value="Security Guard">Security Guard</option>
-        <option value="Facility Technician">Facility Technician</option>
-        <option value="Site Supervisor">Site Supervisor</option>
-        <option value="Pantry & Kitchen Staff">Pantry & Kitchen Staff</option>
-        <option value="Driver">Driver</option>
-        <option value="Other">Other</option>
-      </select>
-    </div>
-
-    <div class="col-md-6">
-      <label class="form-label-c">Total Experience</label>
-      <select
-        name="experience"
-        class="form-select-c">
-        <option value="">Select range</option>
-        <option value="Fresher">Fresher</option>
-        <option value="1-2 Years">1–2 Years</option>
-        <option value="3-5 Years">3–5 Years</option>
-        <option value="5+ Years">5+ Years</option>
-      </select>
-    </div>
-
-    <div class="col-md-6">
-      <label class="form-label-c">Preferred Location</label>
-      <input
-        type="text"
-        name="preferred_location"
-        class="form-control-c"
-        placeholder="e.g. Delhi, Noida, Gurgaon">
-    </div>
-
-    <div class="col-md-6">
-      <label class="form-label-c">Upload Résumé</label>
-      <input
-        type="file"
-        name="resume"
-        class="form-control-c"
-        accept=".pdf,.doc,.docx">
-    </div>
-
-    <div class="col-12">
-      <label class="form-label-c">Tell Us About Yourself</label>
-      <textarea
-        name="about"
-        class="form-control-c"
-        rows="5"
-        placeholder="Brief work history, availability, and any certifications (e.g. PSARA, ITI)..."></textarea>
-    </div>
-
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary-c w-100 w-md-auto">
-        Submit Application &#9993;
-      </button>
-
-      <p class="small text-muted-2 mt-2 mb-0">
-        By submitting this form, you agree to our Privacy Policy and Terms of Service.
-      </p>
-    </div>
-
-  </div>
 </form>
 
         </div>
@@ -582,5 +645,7 @@
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 <script src="./assets/js/header_footer.js"></script>
+<script src="./assets/js/career_netlify.js"></script>
+
 </body>
 </html>
