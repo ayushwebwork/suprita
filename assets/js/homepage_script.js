@@ -103,7 +103,7 @@ statNums.forEach(el=>countIO.observe(el));
 /* ---------- Hero slider: typing effect + photo crossfade + nav ---------- */
 const heroCarouselEl = document.getElementById('heroCarousel');
 const heroItems = heroCarouselEl.querySelectorAll('.carousel-item');
-const heroCarousel = new bootstrap.Carousel(heroCarouselEl, {interval:3000, wrap:true});
+const heroCarousel = new bootstrap.Carousel(heroCarouselEl, {interval:3000, wrap:true, pause:false});
 const heroPhotoSlides = document.querySelectorAll('.hero-photo-slide');
 const dotsWrap = document.getElementById('heroDots');
 const heroCountEl = document.getElementById('heroCount1');
